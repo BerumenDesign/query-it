@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background: #0A1624;
+}
+.navbar-dark,
+.side-bar {
+	background: #0A1624 !important;
+	padding: 1em;
+}
+.main-view {
+	background: #F5F7FD;
+}
+footer {
+	background: #0A1624;
+	color: #ACACAC;
+	
+}
+
+th, td {
+	font-size: 14px;
+}
+
+breadcrumb {
+	background: none;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.login .container {
+	height: 80vh;
+}
+a {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	margin: auto 0;
+	text-align: center;
+	color: #999;
+}

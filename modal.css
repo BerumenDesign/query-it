@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+header {
+	background: rgba(50,105,175,0.10);
+	color: #3269AF;
+}
+header h3 {
+	font-weight: lighter;
+	font-size: 2em;
+}
+header .btn-link {
+	color: #999;
+}
+header .fa-times-circle {
+	font-size: 32px;
+}
+.add-panel {
+	background: rgba(235,240,247,1.00);
+	border-radius: 4px;
+}
+.add-panel .btn {
+	margin: 10px auto;
+}
+.form-check-label {
+	margin-right: 10px;
+}
+.impacts_section .btn-secondary {
+	background: #666;
+	color: #ccc;
+}
+.impacts_section .btn-secondary:not(:disabled):not(.disabled).active {
+	background: #3269AF;
+}
+.help_banner {
+	display: block;
+	color: #3269AF;
+}
+footer {
+	background: none;
+}

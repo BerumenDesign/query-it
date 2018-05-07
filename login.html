@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oxygen:300,400,700" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
+<link rel="stylesheet" href="css/main_layout.css">
+<link href="login.css" rel="stylesheet" type="text/css">
+<link href="app.css" rel="stylesheet" type="text/css">
+<title>Query-it App</title>
+</head>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#"><img  class="logo" src="img/query-it-logo.svg" onerror="this.onerror=null; this.src='img/query-it-logo.png'"> </a>
+</nav>
+<body class="login">
+	<div class="container">
+  <div class="row justify-content-center align-self-center">
+
+    <div class="col-sm-12 col-md-8 col-lg-6">
+		<div class="card m-3 p-5">
+			<h2 class="pb-4">Login</h2>
+<form>
+  <div class="form-group">
+    <label for="username">Username or Email address</label>
+    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter your username or email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+            <div class="input-group">
+          <input type="password" class="form-control pwd" placeholder="Enter password">
+          <span class="input-group-btn">
+            <button class="btn btn-default btn-outline-secondary reveal" type="button"><i class="fa fa-eye"></i></button>
+          </span>          
+        </div>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-lg btn-primary mt-4 pl-5 pr-5 btn-block">Login</button>
+	<a href="#" class="mt-4 pl-5 pr-5">Forgot your password?</a>
+</form>
+		</div>
+		<div class="card m-3 p-4 text-center">
+  <h6>Do not have an account?</h6>
+			<a href="email: info@queryapp.com"><h5>Contact us at info@queryapp.com</h5></a>
+		</div>
+    </div>
+
+  </div>
+</div>
+<footer class="text-center p-3">About FAQ Terms of Service © 2017 Copyright: Tryst Canada Consultants Ltd.</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+	$(".reveal").on('click',function() {
+    var $pwd = $(".pwd");
+    if ($pwd.attr('type') === 'password') {
+        $pwd.attr('type', 'text');
+    } else {
+        $pwd.attr('type', 'password');
+    }
+});
+</script>
+	
+</body>
+</html>

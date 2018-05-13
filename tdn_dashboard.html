@@ -18,7 +18,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#"><img  class="logo" src="img/query-it-logo.svg" onerror="this.onerror=null; this.src='img/query-it-logo.png'"> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="navbar-nav mr-auto">
+    <div class="navbar-nav mr-auto col-sm-12 col-lg-6">
       <div class="group-btn">
 		<a class="btn btn-secondary" href="dcn_dashboard.html">
         
@@ -47,7 +47,7 @@
 </nav>
 <div class="container-fluid">
   <div class="row">
-    <div class="side-bar d-none d-sm-block col-lg-3">
+    <div class="side-bar col-lg-3 col-md-4 col-sm-12">
       <div class="row accordion-top">
         <div class="col-6"></div>
         <div class="col-2 text-center"><em class="fa fa-envelope-open"></em></div>
@@ -133,7 +133,7 @@
             </div>
           </div>
         </div>
-        <h6 class="mt-5">Actions tracker</h6>
+        <h6 class="mt-5">Outstanding Actions tracker</h6>
         <button type="button" class="btn btn-block p-0">
         <div class="row">
           <div class="col-10 text-left mt-2"> Outstanding Actions</div>
@@ -142,13 +142,15 @@
         </button>
         <button type="button" class="btn btn-block p-0">
         <div class="row">
-          <div class="col-10 text-left mt-2"> Outstanding Action Confirmations</div>
+          <div class="col-10 text-left mt-2">
+            <p>&nbsp;Action Confirmations</p>
+          </div>
           <div class="col-2 badge-danger pb-2 pt-2"> 1 </div>
         </div>
         </button>
       </div>
     </div>
-    <div class="m col-sm-12 col-lg-9">
+    <div class="m col-lg-9 col-md-8 col-sm-12">
       <div class="card mt-3 mb-3 p-4">
         <div class="row">
           <div class="col-sm-12 col-lg-6">
@@ -167,7 +169,7 @@
           </div>
         </div>
         <nav>
-          <div class="nav nav-tabs mb-4" id="nav-tab" role="tablist"> <a class="nav-item nav-link active" id="nav-tdn-tab" data-toggle="tab" href="#nav-tdn" role="tab" aria-controls="nav-tdn" aria-selected="true">TDN</a> <a class="nav-item nav-link" id="nav-KPI-tab" data-toggle="tab" href="#nav-KPI" role="tab" aria-controls="nav-profile" aria-selected="false">KPI</a> </div>
+          <div class="nav nav-tabs mb-4" id="nav-tab" role="tablist"> <a class="nav-link active" id="nav-tdn-tab" data-toggle="tab" href="#nav-tdn" role="tab" aria-controls="nav-tdn" aria-selected="true">TDN</a> <a class="nav-item nav-link" id="nav-KPI-tab" data-toggle="tab" href="#nav-KPI" role="tab" aria-controls="nav-profile" aria-selected="false">KPI</a> </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-tdn" role="tabpanel" aria-labelledby="nav-home-tdn"> 
@@ -192,7 +194,7 @@
                         <th scope="col">Standard</th>
                         <th scope="col">Discipline</th>
                         <th scope="col">Risk Level</th>
-                        <th scope="col">Cost</th>
+                        <th scope="col">Cost (CAD)</th>
                         <th scope="col">Schedule</th>
                         <th scope="col" class="table-primary">Safety</th>
                         <th scope="col" class="table-primary">Operability</th>
@@ -210,7 +212,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -226,7 +228,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -242,7 +244,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -258,7 +260,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -274,7 +276,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -424,7 +426,7 @@
                         <th scope="col">Standard</th>
                         <th scope="col">Discipline</th>
                         <th scope="col">Risk Level</th>
-                        <th scope="col">Cost</th>
+                        <th scope="col">Cost (CAD)</th>
                         <th scope="col">Schedule</th>
                         <th scope="col" class="table-primary">Safety</th>
                         <th scope="col" class="table-primary">Operability</th>
@@ -442,7 +444,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -458,7 +460,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -474,7 +476,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -490,7 +492,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>
@@ -506,7 +508,7 @@
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>CAD 34,334.38</td>
+                        <td>34,334.38</td>
                         <td>This_is_schedule</td>
                         <td class="table-primary">This_is_safety</td>
                         <td class="table-primary">This_is_operability</td>

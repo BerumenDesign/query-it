@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
-    background: #0d1e33;
+    background: #0D1E33;
     color: #666;
-	font-family: Oxygen, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: Oxygen, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 .logo {
     height: 50px;
@@ -12,43 +12,43 @@ body {
     color: #6F9EDA;
 }
 .navbar-dark .dropdown-menu.show {
-	background: #142C4B;
-	color: #efefef;
-	line-height: 2em;
+    background: #142C4B;
+    color: #EFEFEF;
+    line-height: 2em;
 }
 .navbar-dark .dropdown-menu {
-	padding: 0;
+    padding: 0;
 }
 .navbar-dark .dropdown-item {
-	color: #6F9EDA;
-	padding: 10px;
-	border-top: 1px solid #0D1E33;
+    color: #6F9EDA;
+    padding: 10px;
+    border-top: 1px solid #0D1E33;
 }
 .navbar-dark, .side-bar {
-    background: #0d1e33 !important;
+    background: #0D1E33 !important;
     padding: 1em;
     color: aliceblue;
     font-size: 16px;
 }
 .side-bar .row {
-    background: #132c4b;
-    color: #6f9eda !important;
+    background: #132C4B;
+    color: #6F9EDA !important;
     margin: 1px;
 }
 .side-bar .btn-block {
-    background: #142C4B !important;	
+    background: #142C4B !important;
 }
 .navbar-dark .btn-secondary {
     background: none;
     border: none;
     color: #6F9EDA;
-    padding: .5em 2em;
+    padding: 0.5em 2em;
 }
 .navbar-dark .btn-secondary:active {
     background: none;
     border-bottom: 5px solid #9EC8FF !important;
 }
-.navbar-dark .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+.navbar-dark .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
     background: none;
     border-bottom: 5px solid #9EC8FF !important;
 }
@@ -59,7 +59,7 @@ body {
     border-bottom: 5px solid #9EC8FF !important;
 }
 .accordion-top {
-    font-size: .75em;
+    font-size: 0.75em;
     padding: 10px 0;
 }
 .accordion-top .fa {
@@ -71,7 +71,7 @@ body {
 }
 .accordion-heading, .accordion-inner {
     display: block;
-    color: #f3f3f3 !important;
+    color: #F3F3F3 !important;
     line-height: 2.5em;
 }
 .accordion-inner .col-6 {
@@ -81,27 +81,58 @@ body {
     background: #F5F7FD;
 }
 .breadcrumb {
-	background: none;
+    background: none;
 }
 .breadcrumb-item a {
-	color: #142C4B !important;
+    color: #142C4B !important;
 }
 .new-button {
     border-radius: 4px !important;
 }
 footer {
-	color: #ACACAC;	
+    color: #ACACAC;
 }
 .table thead th {
-	border-top: none;
-	border-bottom: 1px solid #999;}
+    border-top: none;
+    border-bottom: 1px solid #999;
+}
 th, td {
     font-size: 12px;
-	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif"}
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
 .table-primary {
-	background: #D8EBFF;
+    background: #D8EBFF;
 }
 breadcrumb {
     background: none;
 }
-
+#nav-tdn-tab .active {
+    border: 0px solid #FFF !important;
+    background: red !important;
+}
+a .nav-link {
+    background: green !important;
+}
+#nav-tab .nav-link {
+    border: none;
+    color: #666;
+}
+.nav-pills .nav-link {
+    color: #999;
+}
+#closed-tab.active.show {
+    background: #999;
+}
+.nav-item.nav-link.active.show, a.nav-item.nav-link.active {
+    border-bottom: 3px solid #93C1FF !important;
+    color: #3B639A !important;
+}
+.card button.btn-link {
+    color: #999;
+}
+#open-tab.nav-link.active {
+    background: #249D3D;
+}
+#overdue-tab.active.show {
+    background: #D72E3D;
+}

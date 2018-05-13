@@ -6,7 +6,7 @@ header {
 }
 header h3 {
 	font-weight: lighter;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 header .btn-link {
 	color: #999;
@@ -15,7 +15,8 @@ header .fa-times-circle {
 	font-size: 32px;
 }
 .add-panel {
-	background: rgba(235,240,247,1.00);
+	background: #F7F7F7;
+	border: 1px solid #ccc;
 	border-radius: 4px;
 }
 .add-panel .btn {

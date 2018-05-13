@@ -23,3 +23,10 @@ label {
 .btn-outline-secondary {
 	border: 1px solid rgba(143,143,143,1.00);
 }
+.btn-outline-dark {
+	background: #fff;
+	border: 1px solid rgba(143,143,143,1.00);
+}
+.btn-outline-dark:hover {
+	background: #3269AF;
+}

@@ -1,7 +1,13 @@
 @charset "UTF-8";
-
+.modal-full {
+	min-width: 100%;
+	margin: 0;
+}
+.modal-full .modal-content {
+	min-height: 100vh;
+}
 header {
-	background: rgba(50,105,175,0.10);
+	background: rgba(50, 105, 175, 0.10);
 	color: #3269AF;
 }
 header h3 {
@@ -16,7 +22,7 @@ header .fa-times-circle {
 }
 .add-panel {
 	background: #F7F7F7;
-	border: 1px solid #ccc;
+	border: 1px solid #CCC;
 	border-radius: 4px;
 }
 .add-panel .btn {
@@ -27,7 +33,7 @@ header .fa-times-circle {
 }
 .impacts_section .btn-secondary {
 	background: #666;
-	color: #ccc;
+	color: #CCC;
 }
 .impacts_section .btn-secondary:not(:disabled):not(.disabled).active {
 	background: #3269AF;
@@ -36,6 +42,35 @@ header .fa-times-circle {
 	display: block;
 	color: #3269AF;
 }
-footer {
+.modal footer {
 	background: none;
+}
+label {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.btn-outline-secondary {
+	border: 1px solid rgba(143, 143, 143, 1.00);
+}
+.btn-outline-dark {
+	background: #FFF;
+	border: 1px solid rgba(143, 143, 143, 1.00);
+}
+.btn-outline-dark:hover {
+	background: #3269AF;
+}
+.level-option .btn-outline-secondary {
+	text-align: left;
+	text-transform: none;
+	white-space: normal;
+	background: white;
+	border: 1px solid #CCC;
+}
+.level-option .btn-outline-secondary active {
+	background: red;
+}
+.level-option .btn-outline-secondary:hover, .level-option .btn-outline-secondary.active {
+	background: #EBF0F7 !important;
+	color: #3269AF !important;
+	border: 1px solid #3269AF !important;
 }

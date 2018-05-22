@@ -8,309 +8,338 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oxygen:300,400,700" rel="stylesheet">
-<script type="text/javascript" src="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <link rel="stylesheet" href="css/main_layout.css">
 <link href="login.css" rel="stylesheet" type="text/css">
-<link href="app.css" rel="stylesheet" type="text/css">
 <link href="modal.css" rel="stylesheet" type="text/css">
 <title>Query-it App</title>
 </head>
 
 <body>
-<!-- Large modal -->
-<button type="button" class="btn btn-primary m-3" data-toggle="modal" data-target=".dcn_modal">Create FCN</button>
-<div class="modal fade dcn_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="card">
-        <header class="pt-2 pb-2 pl-4">
-          <h3 class="float-left pt-2">Generate Notice</h3>
-          <div class="float-right">
-            <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
-            <button class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></button>
-          </div>
-        </header>
-        <div class="container p-4">
-          <div>
-          <section>
-            <nav aria-label="breadcrumb" class="mb-4">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Suncor</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Froth Export</li>
-              </ol>
-              <h4>Field Change Notice</h4>
-            </nav>
-          </section>
+<div class="card m-4 text-center">Form 1 Create FCN</div>
+<div class="modal-content">
+  <!-- This is where header starts -->
+  <header class="pt-2 pb-2 pl-4">
+    <h3 class="float-left pt-2">Generate Notice</h3>
+    <div class="float-right">
+      <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
+      <button class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></button>
+    </div>
+  </header>
+  <!-- This is where content starts -->
+  <div class="container p-4">
+    <!-- This is where header starts -->
+    <section>
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb pl-0">
+          <li class="breadcrumb-item"><a href="#">ComPany</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Project</li>
+        </ol>
+        <h4>Field Change Notice</h4>
+      </nav>
+    </section>
+    <!-- This is where form starts -->
+    <form>
+    <div class="form-row">
+      <div class="form-group col-sm-12">
+        <label>Title</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group col-sm-12 col-md-6">
+        <label for="inputPlant">Plant</label>
+        <button class="btn btn-link btn-sm float-right m-0 p-0 pr-3"><i class="fa fa-plus"></i> Add Plant</button>
+        <select id="inputPlant" class="form-control">
+          <option selected>Select Plant</option>
+          <option>Plant 1</option>
+          <option>Plant 2</option>
+          <option>Plant 3</option>
+        </select>
+      </div>
+      <div class="form-group col-sm-12 col-md-6">
+        <label for="inputDiscipline">Discipline</label>
+        <select id="inputDiscipline" class="form-control">
+          <option selected>Select Discipline</option>
+          <option>Discipline 1</option>
+          <option>Discipline 2</option>
+          <option>Discipline 3</option>
+        </select>
+      </div>
+      <div class="form-group col-sm-12 col-md-6">
+        <label for="inputTag">Tag</label>
+        <input id="inputTag" type="text" class="form-control">
+      </div>
+      <div class="form-group col-sm-12 col-md-6">
+        <label for="inputCategory">Change code</label>
+        <select id="inputCategory" class="form-control">
+          <option selected>Select Category</option>
+          <option>Client Request</option>
+          <option>Construction Request</option>
+          <option>Design Error</option>
+          <option>Scope Change</option>
+          <option>Supplier/Vendor Change</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputReason">Reason for change</label>
+      <textarea type="text" class="form-control" id="inputReason" placeholder="Enter existing condition"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="inputExCond">Existing Condition</label>
+      <textarea type="inputExCond" class="form-control" id="inputExCond" placeholder="Enter existing condition"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="inputChange2">Description of Change</label>
+      <textarea type="inputChange" class="form-control" id="inputChange" placeholder="Describe change"></textarea>
+    </div>
+	  </form>
+    <!-- This is Action and impacts section -->
+    <section class="row mt-4">
+      <h4 class="col-sm-12">Actions & Impacts</h4>
+      <h5 class="col-sm-12">Impacted drawings:</h5>
+      <div class="form-group mb-6 col-sm-12 col-lg-6">
+        <div class="p-4 add-panel">
           <form>
-          <div class="form-row">
-            <div class="form-group col-sm-12">
-              <label>Title</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-sm-12 col-md-6">
-              <label for="inputPlant">Plant</label>
-              <button class="btn btn-link btn-sm float-right m-0 p-0 pr-3"><i class="fa fa-plus"></i> Add Plant</button>
-              <select id="inputPlant" class="form-control">
-                <option selected>Select Plant</option>
-                <option>Plant 1</option>
-                <option>Plant 2</option>
-                <option>Plant 3</option>
-              </select>
-            </div>
-            <div class="form-group col-sm-12 col-md-6">
-              <label for="inputDiscipline">Discipline</label>
-              <select id="inputDiscipline" class="form-control">
-                <option selected>Select Discipline</option>
-                <option>Discipline 1</option>
-                <option>Discipline 2</option>
-                <option>Discipline 3</option>
-              </select>
-            </div>
-            <div class="form-group col-sm-12 col-md-6">
-              <label for="inputTag">Tag</label>
-              <input id="inputTag" type="text" class="form-control">
-            </div>
-            <div class="form-group col-sm-12 col-md-6">
-              <label for="inputCategory">Change code</label>
-              <select id="inputCategory" class="form-control">
-                <option selected>Select Category</option>
-                <option>Client Request</option>
-                <option>Construction Request</option>
-                <option>Design Error</option>
-                <option>Scope Change</option>
-                <option>Supplier/Vendor Change</option>
-              </select>
-            </div>
+          <h6>Add impacted drawing</h6>
+          <div class="form-group">
+            <label>Drawing #</label>
+            <input type="text" class="form-control">
           </div>
           <div class="form-group">
-            <label for="inputReason">Reason for change</label>
-            <textarea type="text" class="form-control" id="inputReason" placeholder="Enter existing condition"></textarea>
+            <label>Revision #</label>
+            <input type="text" class="form-control">
           </div>
-          <div class="form-group">
-            <label for="inputExCond">Existing Condition</label>
-            <textarea type="inputExCond" class="form-control" id="inputExCond" placeholder="Enter existing condition"></textarea>
+          <div class="text-center">
+            <button class="btn btn-outline-dark"><em class="fa fa-plus"></em> Add drawing</button>
           </div>
-          <div class="form-group">
-            <label for="inputChange2">Description of Change</label>
-            <textarea type="inputChange" class="form-control" id="inputChange" placeholder="Describe change"></textarea>
+          </form>
+        </div>
+      </div>
+      <div class="form-group mb-6 col-sm-12 col-lg-6">
+        <h6>Impacted drawing list:</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Drawing #</th>
+              <th scope="col">Revision #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">123456</th>
+              <td>v1</td>
+            </tr>
+            <tr>
+              <th scope="row">123456</th>
+              <td>v2</td>
+            </tr>
+            <tr>
+              <th scope="row">123456</th>
+              <td>v3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- First seletion section -->
+      <div class="col-12 card ml-3 mr-3 p-3">
+        <div class="form-group ">
+          <label for="inputChange5">Are other disciplines affected?</label>
+          <div class="btn-group btn-group-toggle impacts_section" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked>
+              Yes </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off">
+              No </label>
           </div>
-          <section class="row mt-4">
-            <h5 class="col-sm-12">Impacted documents:</h5>
+          <button type="button" class="btn btn-outline-info btn-info" data-toggle="tooltip" data-placement="top" title="If yes clicked, then ability to select the other impacted disciplines.Action created called 'This change impacts the xxx, xxx, and xxx disciplines.  Issue change notices for impacted disciplines'"><i class="fa fa-info"></i></button>
+        </div>
+        <div id="DisAffected" class="col-12">
+          <section class="row">
+            <h5 class="col-sm-12">Disciplines affected</h5>
             <div class="form-group mb-6 col-sm-12 col-lg-6">
               <div class="p-4 add-panel">
                 <form>
-                <h6>Add impacted document</h6>
-                <div class="form-group">
-                  <label>Document #</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Revision #</label>
-                  <input type="text" class="form-control">
-                </div>
-				                <div class="text-center">
-                <button class="btn btn-outline-dark"><i class="fa fa-plus"></i> Add document</button>
-                </div>
-
+                  <h6>Add discipline</h6>
+                  <div class="form-group">
+                    <label>Document #</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-outline-dark"><em class="fa fa-plus"></em> Add discipline</button>
+                  </div>
                 </form>
               </div>
             </div>
             <div class="form-group mb-6 col-sm-12 col-lg-6">
-              <h6>Impacted documents list:</h6>
+              <h6>Impacted discipline:</h6>
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Document #</th>
-                    <th scope="col">Revision #</th>
+                    <th scope="col">Discipline</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">123456</th>
-                    <td>v1</td>
+                    <th scope="row">Discipline 1</th>
                   </tr>
                   <tr>
-                    <th scope="row">123456</th>
-                    <td>v2</td>
+                    <th scope="row">Discipline 2</th>
                   </tr>
                   <tr>
-                    <th scope="row">123456</th>
-                    <td>v3</td>
+                    <th scope="row">Discipline 3</th>
                   </tr>
                 </tbody>
               </table>
             </div>
           </section>
-			<section class="impacts_section">
-				<h5>Change impacts:</h5>
-				<hr>
-			<div class="row">
-			 <div class="form-group mb-6 col-sm-12 col-lg-4">
-              <div class="mb-3"><label for="inputChange"  class="mr-2">Process safety</label>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked>
-                    Yes </label>
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option2" autocomplete="off">
-                    No </label>
-                </div>
-
-              </div>
-
+        </div>
+      </div>
+      <!-- Second seletion section -->
+      <div class="col-12 card ml-3 mr-3 p-3">
+        <div class="form-group">
+          <div>
+            <label for="inputChange3">Are process safety affected?</label>
+            <div class="btn-group btn-group-toggle impacts_section" data-toggle="buttons">
+              <label class="btn btn-secondary active ">
+                <input type="radio" name="options" id="option3" autocomplete="off" checked>
+              Yes </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option4" autocomplete="off">
+                No </label>
             </div>
-								 <div class="col-sm-12 col-lg-8"> 
-									 <ul>
-									   This change impacts Process Safety:
-									   <li>Confirm process safety assestment</li>
-										 <li>PHA is conducted</li>
-									 </ul></div>
-			  </div>
-				<hr>
-			<div class="row">
-			 <div class="form-group mb-6 col-sm-12 col-lg-4">
-              <div class="mb-3">
-				                 <label for="inputChange"  class="mr-3">MTO / BOM</label>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option3" autocomplete="off" checked>
-                    Yes </label>
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option4" autocomplete="off">
-                    No </label>
-                </div>
- 
-              </div>
-
-            </div>
-								 <div class="col-sm-12 col-lg-8"> 
-									 <ul>
-									   This change revises required materials:
-									   <li>Upload revised MTO / BOM</li>
-									 </ul></div>
-			  </div>
-			  
-			  </section>
-			  <hr>
-          <section>
-			 
-			  <h5>Risk Assessment</h5>
+            <button type="button" class="btn btn-outline-info btn-info" data-toggle="tooltip" data-placement="top" title="If yes clicked, then action created 'This change impacts Process safety.  Process Hazard evaluation (Risk assessment, PHA, etc.) to be conducted'"><i class="fa fa-info"></i></button>
+          </div>
+        </div>
+        <!-- Risk assessment section -->
+        <h5>Risk Assessment</h5>
 			  <div class="row">
 			<div class="form-group mb-6 col-sm-12">
               <div class="p-4 add-panel">
                 <form>
-                  <a href="#" class="help_banner"><em class="fa fa-question-circle"></em> Use risk assessment wizard</a>
-                  <hr>
-                  <h6>Risk Assesment Form</h6>
-                  <div class="form-group">
-                    <label for="inputCons">Consequence receptor</label>
-                    <select id="inputCons" class="form-control col-sm-6">
-                <option selected>Select Consequence</option>
-                <option>Environmental</option>
+                <h6>Risk Assesment Calculator</h6>
+                <div class="form-group">
+                  <label for="inputConsRec">Consequence receptor</label>
+                    <select id="inputConsRec" class="form-control col-sm-6">
+                
+                <option selected>Environmental</option>
                 <option>Financial</option>
                 <option>Health & Safety</option>
                 <option>Regulatory</option>
                 <option>Reputation</option>
               </select>
+                <div class="form-group mt-4">
+                  <label>Select consequence level</label>
+                  <br>
+                  <div class="btn-group-toggle impacts_section mb-0 level-option row" data-toggle="buttons">
+
+                    <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0">
+                    <input type="radio" name="options" id="C1" autocomplete="off" checked>
+					<span class="card-title">Level C1</span><br/>
+					<span class="small">Impact limited to property, clean up required only</span>
+                    </label>
+
+						
+                    <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0" data-toggle="collapse" href="#collapseExample">
+                      <input type="radio" name="options" id="C2" autocomplete="off" >
+                      <span class="card-title">Level C2</span><br>
+                      <span class="small">Off property impact requiring clean up only or impact limited to the property requiring either remediation or reclamation taking D-6 months</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="options" id="C3" autocomplete="off">
+                      <span class="card-title">Level C3</span><br>
+                      <span class="small">Off property impact requiring remediation taking D-6 months or impact limited to the property requiring either remediation or cleamation taking 7-12 months</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="options" id="C4" autocomplete="off">
+                      <span class="card-title">Level C4</span><br>
+                      <span class="small">Off property impact requiring remediation taking 7-12 months or impact limited to the property requiring either remediation or cleamation taking 1-4 years</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="options" id="C5" autocomplete="off">
+                      <span class="card-title">Level C5</span><br>
+                      <span class="small">Off property impact requiring remediation taking 1-4 years or impact limited to the property requiring either remediation or cleamation taking 5 years or more</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="options" id="C6" autocomplete="off">
+                      <span class="card-title">Level C6</span><br>
+                      <span class="small">Off property impact requiring remeditation taking 5 years or more<br></span>
+                    </label>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label>Consequence Level</label>
-                  <br/>
-				<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">C1</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">C2</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-  <label class="form-check-label" for="inlineRadio3">C3</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-  <label class="form-check-label" for="inlineRadio4">C4</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-  <label class="form-check-label" for="inlineRadio5">C5</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option5">
-  <label class="form-check-label" for="inlineRadio5">C6</label>
-</div>
-</div>
-					                <div class="form-group">
                   <label>Likelihood Level</label>
                   <br/>
-				<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioLike" id="inlineRadioL1" value="option1">
-  <label class="form-check-label" for="inlineRadioL1">L1</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioLike" id="inlineRadioL2" value="option2">
-  <label class="form-check-label" for="inlineRadioL2">L2</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioLike" id="inlineRadioL3" value="option3">
-  <label class="form-check-label" for="inlineRadioL3">L3</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioLike" id="inlineRadioL4" value="option4">
-  <label class="form-check-label" for="inlineRadioL4">L4</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioLike" id="inlineRadioL5" value="option5">
-  <label class="form-check-label" for="inlineRadioL5">L5</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioLike" id="inlineRadioL6" value="option5">
-  <label class="form-check-label" for="inlineRadioL5">L6</label>
-</div>
-</div>
-        <div class="text-right"><button class="btn btn-outline-dark m-4">Save Assessment</button></div>      
+					<form>
+                  <div class="btn-group-toggle impacts_section mb-0 level-option row" data-toggle="buttons">
 
-                </form>
-              </div>
-				<form>
-<div class="form-group row">
-  <label for="riskResult" class="col-sm-2 col-form-label">Assement</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="riskResult" value="Economic Risk level  III  |  Consequence 2 / Likelihood 3">
-		<button class="btn btn-sm btn-outline-dark">Reassess risk</button>
-    </div>
-</div>
-          <div class="form-group">
-            <label for="inputRiskMit">Describe Risk Mitigation(s):</label>
-            <textarea type="inputChange" class="form-control" id="inputRiskMit" placeholder="Applicable for Level I or II risks"></textarea>
-          </div>
-</form>
-				  
+                    <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0">
+                    <input type="radio" name="likeLevels" id="L1" autocomplete="off" checked>
+                    <span class="card-title">Level L1</span><br/>
+                                          <span class="small">Occurs:<br/>
+						  * Between 100 years and less than 1,000 years <br/>
+						  * Over the lifetime of the facility, one more more times within the company</span></label>
+
+						
+                    <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0" data-toggle="collapse" href="#collapseExample">
+                      <input type="radio" name="likeLevels" id="L2" autocomplete="off" >
+                      <span class="card-title">Level L2</span><br>
+                                            <span class="small">Occurs:<br/>
+						  * Between 1,000 years and less than 10,000 years <br/>
+						  * Has been seen three or more times in the industry</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="L\likeLevels" id="L3" autocomplete="off">
+                      <span class="card-title">Level L3</span><br>
+                      <span class="small">Occurs:<br/>
+						  * Between 100 years and less than 1,000 years <br/>
+						  * Over the lifetime of the facility, one more more times within the company</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="likeLevels" id="L4" autocomplete="off">
+                      <span class="card-title">Level L4</span><br>
+                      <span class="small">Occurs:<br/>
+						  * Between 10 years and less than 100 years <br/>
+						  * Over the lifetime of the facility, one more more times within the company</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="likeLevels" id="L5" autocomplete="off">
+                      <span class="card-title">Level L5</span><br>
+                                            <span class="small">Occurs:<br/>
+						  * Between 1 year and less than 10 years <br/>
+						  * Over the lifetime of the facility, one more more times within the company</span></label>
+                    <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                      <input type="radio" name="likeLevels" id="L6" autocomplete="off">
+                      <span class="card-title">Level L6</span><br>
+                      <span class="small">Expected to occur:<br>
+                      * More than one per year within the facility<br></span>
+                    </label>
+                  </div>
+              </form>
             </div>
-				  
-			  </div>
-
-          </section>
-          <div class="form-group text-right">
-            <hr>
-            <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
-            <button type="button" class="btn btn-outline-secondary">Save Draft</button>
-            <button type="button" class="btn btn-success">Generate DCN</button>
-          </div>
-          </form>
+            <form>
+              <div class="form-group row">
+                <label for="riskResult" class="col-sm-2 col-form-label">Assement</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="riskResult" value="Economic Risk level  III  |  Consequence 2 / Likelihood 3">
+                  <button class="btn btn-sm btn-outline-dark">Reassess risk</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputRiskMit">Describe risk mitigation(s):</label>
+                <textarea type="inputChange" class="form-control" id="inputRiskMit" placeholder="Applicable for Level I or II risks"></textarea>
+              </div>
+            </form>
+          </div></form>
         </div>
+				  
       </div>
-    </div>
+		  </div></div>
+			  </section>
+
+
   </div>
 </div>
 
-<!-- Optional JavaScript --> 
-<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
 	$(".reveal").on('click',function() {
     var $pwd = $(".pwd");

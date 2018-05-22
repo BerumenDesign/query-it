@@ -2,8 +2,24 @@
 /* CSS Document */
 body {
     background: #0D1E33;
-    color: #666;
-    font-family: Oxygen, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: #777;
+    font-family: 'Open Sans', Oxygen, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Oxygen, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #3269AF;
+}
+a, .breadcrumb, .btn{
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .3px;
+}
+.accordion, .accordion a {
+	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .3px;
+	text-transform: none;
 }
 .logo {
     height: 50px;
@@ -58,6 +74,11 @@ body {
 .navbar-dark .btn-secondary .focus {
     border-bottom: 5px solid #9EC8FF !important;
 }
+.btn-info{
+	width: 2.3em;
+	height: 2.3em;
+	border-radius: 100%;
+}
 .accordion-top {
     font-size: 0.75em;
     padding: 10px 0;
@@ -78,7 +99,8 @@ body {
     padding-left: 20px;
 }
 .main-view {
-    background: #F5F7FD;
+    background: #FFF;
+	min-height: 70vh;
 }
 .breadcrumb {
     background: none;
@@ -89,16 +111,30 @@ body {
 .new-button {
     border-radius: 4px !important;
 }
-footer {
-    color: #ACACAC;
-}
+
 .table thead th {
     border-top: none;
     border-bottom: 1px solid #999;
 }
+.table .badge-success, .table .badge-danger {
+	border-radius: 3px;
+	display: block;
+	padding: .25em;
+	font-size: 1em;
+	height: 1.4em;
+	width: 1.4em;
+}
+
 th, td {
     font-size: 12px;
-    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: 'Open Sans', sans-serif;
+	line-height: 1.8em;
+	vertical-align: middle;
+}
+table i {
+font-size: 1.4em;
+text-align: center;
+margin: auto 0;
 }
 .table-primary {
     background: #D8EBFF;
@@ -120,9 +156,7 @@ a .nav-link {
 .nav-pills .nav-link {
     color: #999;
 }
-#closed-tab.active.show {
-    background: #999;
-}
+
 .nav-item.nav-link.active.show, a.nav-item.nav-link.active {
     border-bottom: 3px solid #93C1FF !important;
     color: #3B639A !important;
@@ -130,9 +164,39 @@ a .nav-link {
 .card button.btn-link {
     color: #999;
 }
+#closed-tab, #open-tab, #overdue-tab {
+	padding: 10px 40px;
+	font-size: .9em;
+}
+#closed-tab.active.show {
+	background: #999;}
 #open-tab.nav-link.active {
     background: #249D3D;
+	
 }
 #overdue-tab.active.show {
     background: #D72E3D;
+}
+
+/* Footer */
+footer {
+	text-transform: uppercase;
+	font-size: .85em;
+	color: #6F9EDA;
+}
+FOOTER A {
+	padding: 0 1em;
+	display: inline-block;
+	color: #6F9EDA;
+}
+.m2 {
+}
+.table-md {
+}
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}.r-1 {
 }

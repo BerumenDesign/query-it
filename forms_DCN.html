@@ -21,7 +21,7 @@
 <div class="modal-content">
 <!-- This is where header starts -->
 <header class="pt-2 pb-2 pl-4">
-  <h3 class="float-left pt-2">Generate FCN</h3>
+  <h3 class="float-left pt-2">Generate DCN</h3>
   <div class="float-right">
     <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
     <button class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></button>
@@ -36,7 +36,7 @@
       <li class="breadcrumb-item"><a href="#">ComPany</a></li>
       <li class="breadcrumb-item active" aria-current="page">Project</li>
     </ol>
-    <h4>Field Change Notice</h4>
+    <h4>Design Change Notice</h4>
   </nav>
 </section>
 <!-- This is where form starts -->
@@ -70,7 +70,7 @@
       <input id="inputTag" type="text" class="form-control">
     </div>
     <div class="form-group col-sm-12 col-md-6">
-      <label for="inputCategory">Change code</label>
+      <label for="inputCategory">Category</label>
       <select id="inputCategory" class="form-control">
         <option selected>Select Category</option>
         <option>Client Request</option>
@@ -82,15 +82,11 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="inputReason">Reason for change</label>
-    <textarea type="text" class="form-control" id="inputReason" placeholder="Enter existing condition"></textarea>
-  </div>
-  <div class="form-group">
     <label for="inputExCond">Existing Condition</label>
     <textarea type="inputExCond" class="form-control" id="inputExCond" placeholder="Enter existing condition"></textarea>
   </div>
   <div class="form-group">
-    <label for="inputChange2">Description of Change</label>
+    <label for="inputChange">Description of Change</label>
     <textarea type="inputChange" class="form-control" id="inputChange" placeholder="Describe change"></textarea>
   </div>
 </form>
@@ -100,13 +96,13 @@
 <section>
   <div class="col-12 card p-3">
     <div class="row">
-      <h5 class="col-12">Impacted drawings:</h5>
+      <h5 class="col-12">Impacted documents:</h5>
       <div class="form-group mb-6 col-sm-12 col-md-6">
         <div class="p-4 add-panel">
           <form>
-            <h6>Add impacted drawing</h6>
+            <h6>Add impacted document</h6>
             <div class="form-group">
-              <label>Drawing #</label>
+              <label>Document ID</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group">
@@ -120,7 +116,7 @@
               <div class="invalid-feedback">Example invalid custom file feedback</div>
             </div>
             <div class="text-center">
-              <button class="btn btn-outline-dark"><em class="fa fa-plus"></em> Add drawing</button>
+              <button class="btn btn-outline-dark"><em class="fa fa-plus"></em> Add document</button>
             </div>
           </form>
         </div>
@@ -155,7 +151,7 @@
   <!-- First seletion section -->
   <div class="col-12 card p-3">
     <div class="form-group ">
-      <label for="inputChange5" class="mr-4">Are other disciplines affected?</label>
+      <label for="inputChange6" class="mr-4">Is MTO / BOM affected?</label>
       <div class="btn-group btn-group-toggle impacts_section" data-toggle="buttons">
         <label class="btn btn-secondary active">
           <input type="radio" name="options" id="option1" autocomplete="off" checked>
@@ -211,7 +207,7 @@
   <div class="col-12 card p-3">
     <div class="form-group">
       <div>
-        <label for="inputChange3" class="mr-4">Are process safety affected?</label>
+        <label for="inputChange4" class="mr-4">Is process safety affected?</label>
         <div class="btn-group btn-group-toggle impacts_section" data-toggle="buttons">
           <label class="btn btn-secondary active ">
             <input type="radio" name="options" id="option3" autocomplete="off" checked>

@@ -20,6 +20,9 @@ header .btn-link {
 header .fa-times-circle {
 	font-size: 32px;
 }
+table {
+	background: #FFF !important;
+}
 .add-panel {
 	background: #F7F7F7;
 	border: 1px solid #CCC;
@@ -36,18 +39,15 @@ header .fa-times-circle {
 	color: #CCC;
 }
 .impacts_section .btn-secondary:not(:disabled):not(.disabled).active {
-	background: #3269AF;
+	background: #018FFE;
 }
 .help_banner {
 	display: block;
 	color: #3269AF;
 }
-.modal footer {
-	background: none;
-}
 label {
-	font-size: 0.9em;
-	font-weight: bold;
+	font-size: 0.85em;
+	font-weight: 600;
 }
 .btn-outline-secondary {
 	border: 1px solid rgba(143, 143, 143, 1.00);
@@ -66,11 +66,30 @@ label {
 	background: white;
 	border: 1px solid #CCC;
 }
-.level-option .btn-outline-secondary active {
-	background: red;
-}
 .level-option .btn-outline-secondary:hover, .level-option .btn-outline-secondary.active {
 	background: #EBF0F7 !important;
 	color: #3269AF !important;
 	border: 1px solid #3269AF !important;
+}
+.upload-drop-zone {
+	text-align: center;
+	padding: 30px;
+	display: block;
+	background: #EAF0F7;
+	border-radius: 4px;
+	margin: 5px 0 20px;
+	color: #3269AF;
+	border: 1px dashed #90A7C3;
+	font-size: 0.95em;
+}
+.upload-drop-zone:hover {
+	background: #B3CBEA;
+	color: #FFF;
+}
+.custom-file-label {
+	font-weight: 400 !important;
+	color: gray;
+}
+.card:hover {
+	background: rgba(209, 232, 255, 0.306);
 }

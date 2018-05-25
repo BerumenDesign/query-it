@@ -1,95 +1,148 @@
-@charset "UTF-8";
+form-inline@charset "UTF-8";
 .modal-full {
-	min-width: 100%;
-	margin: 0;
+    min-width: 100%;
+    margin: 0;
 }
 .modal-full .modal-content {
-	min-height: 100vh;
+    min-height: 100vh;
 }
 header {
-	background: rgba(50, 105, 175, 0.10);
-	color: #3269AF;
+    background: rgba(50, 105, 175, 0.10);
+    color: #3269AF;
 }
 header h3 {
-	font-weight: lighter;
-	font-size: 1.5em;
+    font-weight: lighter;
+    font-size: 1.5em;
 }
 header .btn-link {
-	color: #999;
+    color: #999;
 }
 header .fa-times-circle {
-	font-size: 32px;
+    font-size: 32px;
 }
 table {
-	background: #FFF !important;
+    background: #FFF !important;
 }
 .add-panel {
-	background: #F7F7F7;
-	border: 1px solid #CCC;
-	border-radius: 4px;
+    background: #F7F7F7;
+    border: 1px solid #CCC;
+    border-radius: 4px;
 }
 .add-panel .btn {
-	margin: 10px auto;
+    margin: 10px auto;
 }
 .form-check-label {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 .impacts_section .btn-secondary {
-	background: #666;
-	color: #CCC;
+    background: #666;
+    color: #CCC;
 }
 .impacts_section .btn-secondary:not(:disabled):not(.disabled).active {
-	background: #018FFE;
+    background: #018FFE;
 }
 .help_banner {
-	display: block;
-	color: #3269AF;
+    display: block;
+    color: #3269AF;
 }
 label {
-	font-size: 0.85em;
-	font-weight: 600;
+    font-size: 0.85em;
+    font-weight: 600;
 }
 .btn-outline-secondary {
-	border: 1px solid rgba(143, 143, 143, 1.00);
+    border: 1px solid rgba(143, 143, 143, 1.00);
 }
 .btn-outline-dark {
-	background: #FFF;
-	border: 1px solid rgba(143, 143, 143, 1.00);
+    background: #FFF;
+    border: 1px solid rgba(143, 143, 143, 1.00);
 }
-.btn-outline-dark:hover {
-	background: #3269AF;
+.btn-outline-dark:hover, .btn-outline-secondary:hover {
+    background: #3269AF;
+    color: #fff !important;
 }
 .level-option .btn-outline-secondary {
-	text-align: left;
-	text-transform: none;
-	white-space: normal;
-	background: white;
-	border: 1px solid #CCC;
+    text-align: left;
+    text-transform: none;
+    white-space: normal;
+    background: white;
+    border: 1px solid #CCC;
 }
 .level-option .btn-outline-secondary:hover, .level-option .btn-outline-secondary.active {
-	background: #EBF0F7 !important;
-	color: #3269AF !important;
-	border: 1px solid #3269AF !important;
+    background: #EBF0F7 !important;
+    color: #3269AF !important;
+    border: 1px solid #3269AF !important;
 }
 .upload-drop-zone {
-	text-align: center;
-	padding: 30px;
-	display: block;
-	background: #EAF0F7;
-	border-radius: 4px;
-	margin: 5px 0 20px;
-	color: #3269AF;
-	border: 1px dashed #90A7C3;
-	font-size: 0.95em;
+    text-align: center;
+    padding: 30px;
+    display: block;
+    background: #EAF0F7;
+    border-radius: 4px;
+    margin: 5px 0 20px;
+    color: #3269AF;
+    border: 1px dashed #90A7C3;
+    font-size: 0.95em;
+    font-weight: 500;
 }
 .upload-drop-zone:hover {
-	background: #B3CBEA;
-	color: #FFF;
+    background: #B3CBEA;
+    color: #FFF;
+}
+.upload-drop-zone .fa {
+    font-size: 20px;
 }
 .custom-file-label {
-	font-weight: 400 !important;
-	color: gray;
+    font-weight: 400 !important;
+    color: gray;
 }
 .card:hover {
-	background: rgba(209, 232, 255, 0.306);
+    background: rgba(209, 232, 255, 0.306);
+}
+.popup-status-container .breadcrumb {
+    float: none;
+    text-align: center !important;
+    display: inline-flex;
+}
+.popup-status {
+    min-height: 200px;
+    display: block;
+    border-bottom: 1px solid #3269AF;
+}
+.popup-status .btn-group {
+    float: right;
+    text-align: right;
+}
+.popup-status h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.form-inline label {
+    margin-right: 10px;
+    line-height: 2.2em;
+    font-size: 13px;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.signature-pad {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:400px;
+  height:200px;
+	background: #EBF0F7;
+	border: 2px solid inset #ccc;
 }

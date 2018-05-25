@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oxygen:300,400,700" rel="stylesheet">
+<script src="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+<link rel="stylesheet" href="css/main_layout.css">
+<link href="login.css" rel="stylesheet" type="text/css">
+<link href="modal.css" rel="stylesheet" type="text/css">
+<title>Query-it App</title>
+</head>
+
+<body>
+<div class="card m-4 text-center">Form 3 Create FCN</div>
+<div class="modal-content">
+<!-- This is where header starts -->
+<header class="pt-2 pb-2 pl-4">
+  <div class="float-left pt-2">
+	  <button class="btn btn-link active "><h3><b> Submit </b></h3></button>
+	  <button class="btn btn-link active"><h3> Approvals </h3></button>
+  </div>
+  <div class="float-right">
+    <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
+    <button class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></button>
+  </div>
+</header>
+<!-- This is where content starts -->
+<div class="container p-4">
+<!-- This is where header starts -->
+<section>
+  <nav aria-label="breadcrumb" class="mb-4">
+    <ol class="breadcrumb p-0">
+      <li class="breadcrumb-item"><a href="#">Company</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Project</li>
+    </ol>
+    <h4>FCN:&nbsp;101-PIP-PDN-10</h4>
+    <h6>by Tim Williams / Company xx / July 21, 2017 13:01</h6>
+  </nav>
+</section>
+<!-- This is where form starts -->
+<form>
+  <div class="form-row form-inline">
+    <div class="form-group col-sm-12 ">
+      <label>Title: </label>
+		This is Title<br/>
+    </div>
+    <div class="form-group col-sm-6 col-md-3">
+      <label>Plant:</label>
+Plant 101</div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Discipline:</label>
+Piping</div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Tag:</label>
+      101PIP100 </div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Category: </label>
+      Technical</div>
+
+  </div>
+		  <div class="form-group mt-3">
+		    <label for="inputReason1">Reason for change:</label>
+		    <textarea type="text" class="form-control" id="inputReason"></textarea>
+  </div>
+	  <div class="form-group mt-3">
+	    <label for="inputReason4">Existing condition:</label>
+	    <textarea type="text" class="form-control" id="inputReason"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="nputReason3">Description of change:</label>
+    <textarea type="inputChange" class="form-control" id="inputChange"></textarea>
+  </div>
+
+	<h6>Economic Risk level  III (Consequence 2, Likelihood 3)</h6>
+	          <div class="form-group">
+            <label for="inputRiskMit">Describe risk mitigation(s):</label>
+            <textarea type="inputChange" class="form-control" id="inputRiskMit" placeholder="Applicable for Level I or II risks"></textarea>
+          </div>
+	  <div class="form-row row form-inline align-items-start">
+		      <div class="col-sm-12 col-md-6 ">
+          <div class="form-group">
+      <label>Cost savings of:</label>
+$50,000</div>
+   <div class="form-group">
+      <label>Schedule impact of:</label>
+4 months</div></div>
+
+		  <div class="col-sm-12 col-md-6">
+
+        <h6>Impacted drawing list:</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Drawing #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+		  
+  </div>
+
+</div>
+		  <hr>
+<div class="row justify-content-around">
+<div class="col-auto">
+	<h6>Sign into the box below</h6>
+<div class="wrapper card">
+  <canvas id="signature-pad" class="signature-pad" width="400" height="200"></canvas>
+</div>
+<div class="btn-group float-right">
+<button id="cldear" class="btn btn-outline-secondary">Clear</button>
+  <button id="save" class="btn btn-outline-secondary">Save</button>
+
+</div>
+	</div>
+
+	</div>	
+	<hr/>
+		<div class="text-right p-4">
+  <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
+  <button type="button" class="btn btn-outline-secondary">Save Draft</button>
+  <button type="button" class="btn btn-success">Submit FCN for Approval</button>
+</div>
+			</form>
+  </div>
+
+
+
+
+	
+
+
+
+
+
+		<!-- button bar -->
+
+	</div>
+
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+var signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
+  backgroundColor: 'rgba(255, 255, 255, 0)',
+  penColor: 'rgb(0, 0, 0)'
+});
+var saveButton = document.getElementById('save');
+var cancelButton = document.getElementById('clear');
+
+saveButton.addEventListener('click', function (event) {
+  var data = signaturePad.toDataURL('image/png');
+
+// Send data to server instead...
+  window.open(data);
+});
+
+cancelButton.addEventListener('click', function (event) {
+  signaturePad.clear();
+});
+	
+</script>
+	
+</body>
+</html>

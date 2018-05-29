@@ -146,3 +146,15 @@ img {
 	background: #EBF0F7;
 	border: 2px solid inset #ccc;
 }
+.table-signature {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+	max-height: 20px;
+}
+.panel-signature {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+	max-height: 100px;
+}

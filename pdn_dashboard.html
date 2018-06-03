@@ -20,7 +20,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="navbar-nav mr-auto">
-      <div class="group-btn"><a class="btn btn-secondary" href="dcn_dashboard.html"> DCN </a> <a class="btn btn-secondary" href="tdn_dashboard.html" checked="checked"> TDN </a> <a class="btn btn-secondary active" href="pdn_dashboard.html"> PDN </a> <a class="btn btn-secondary" href="fcn_dashboard.html"> FCN </a></div>
+      <div class="group-btn"><a class="btn btn-secondary" href="dcn_dashboard.html"> DCN </a> <a class="btn btn-secondary" href="tdn_dashboard.html"> TDN </a> <a class="btn btn-secondary active" href="pdn_dashboard.html" checked="checked"> PDN </a> <a class="btn btn-secondary" href="fcn_dashboard.html"> FCN </a></div>
     </div>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -40,7 +40,7 @@
       <div class="row accordion-top">
         <div class="col-6"></div>
         <div class="col-2 text-center"><em class="fa fa-envelope-open"></em></div>
-        <div class="col-2 text-center"><em class="fa fa-envelope"></em></div>
+        <div class="col-2 text-center"><em class="fa fa-arrow-right"></em></div>
         <div class="col-2 text-center"><em class="fa fa-clock"></em></div>
       </div>
       <div class="accordion" id="accordion1">
@@ -164,8 +164,9 @@
             <!-- Nav tabs -->
             <ul class="nav nav-pills" id="myTab" role="tablist">
               <li class="nav-item"> <a class="nav-link active" id="open-tab" data-toggle="tab" href="#open" role="tab" aria-controls="open" aria-selected="true"><i class="fa fa-envelope-open"></i> Open</a> </li>
-              <li class="nav-item"> <a class="nav-link" id="closed-tab" data-toggle="tab" href="#closed" role="tab" aria-controls="closed" aria-selected="false"><i class="fa fa-envelope"></i> Closed</a> </li>
-              <li class="nav-item"> <a class="nav-link" id="overdue-tab" data-toggle="tab" href="#overdue" role="tab" aria-controls="overdue" aria-selected="false"><i class="fa fa-clock"></i> Overdue</a> </li>
+
+              <li class="nav-item"> <a class="nav-link" id="closed-tab" data-toggle="tab" href="#closed" role="tab" aria-controls="closed" aria-selected="false"><em class="fa fa-arrow-right"></em> Issued</a></li>
+				              <li class="nav-item"> <a class="nav-link" id="overdue-tab" data-toggle="tab" href="#overdue" role="tab" aria-controls="overdue" aria-selected="false"><em class="fa fa-clock"></em> Overdue</a></li>
             </ul>
             
             <!-- Tab panes -->
@@ -173,7 +174,7 @@
               <div class="tab-pane active" id="open" role="tabpanel" aria-labelledby="home-tab">
                 <h4 class="mt-3 mb-3">Open PDN</h4>
                 <div class="table-responsive">
-                  <table class="table table-sm table-hover table-striped">
+                  <table class="table table-sm table-hover">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -186,10 +187,11 @@
                         <th scope="col">Date generated</th>
                         <th scope="col">Originator</th>
                         <th scope="col"># days open</th>
+						  <th scope="col">Status</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="table-dark">
                         <td>1</td>
                         <td>This_is_title</td>
                         <td>This_is_standard</td>
@@ -199,7 +201,8 @@
                         <td>This_is_schedule</td>
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
-                        <td> 10</td>
+                        <td> N/A</td>
+						  <td>Draft</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -212,6 +215,7 @@
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
+						  <td>Open</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -224,8 +228,9 @@
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
+						  <td>Open</td>
                       </tr>
-                      <tr>
+                      <tr class="table-success">
                         <td>1</td>
                         <td>This_is_title</td>
                         <td>This_is_standard</td>
@@ -236,8 +241,9 @@
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
+						  <td>Approved</td>
                       </tr>
-                      <tr>
+                      <tr class="table-warning">
                         <td>1</td>
                         <td>This_is_title</td>
                         <td>This_is_standard</td>
@@ -248,13 +254,14 @@
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
+						  <td>Rejected</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
               <div class="tab-pane" id="closed" role="tabpanel" aria-labelledby="closed-tab">
-                <h4 class="mt-3 mb-3">Closed PDN</h4>
+                <h4 class="mt-3 mb-3">Issued PDN</h4>
                 <div class="table-responsive">
                   <table class="table table-sm table-hover">
                     <thead>
@@ -266,31 +273,34 @@
                         <th scope="col">Risk Level</th>
                         <th scope="col">Cost (CAD)</th>
                         <th scope="col">Schedule</th>
-                        <th scope="col">Status</th>
+                        
                         <th scope="col">Date generated</th>
                         <th scope="col">Originator</th>
                         <th scope="col"># days to closure</th>
                         <th scope="col">Action Required</th>
                         <th scope="col">Action Completed</th>
                         <th scope="col">Action Confirmed</th>
+						  <th scope="col">Status</th>
+					
                       </tr>
                     </thead>
                     <tbody>
-                      <tr class="table-danger">
+                      <tr>
                         <td>1</td>
                         <td>This_is_title</td>
                         <td>This_is_standard</td>
                         <td>This_is_discipline</td>
                         <td>L1</td>
-                        <td>34,334.38</td>
+                        <td> 34,334.38</td>
                         <td>This_is_schedule</td>
-                        <td><i class="fas fa-times badge-danger"></i></td>
-                        <td class="no">MMM / DD / YYYY</td>
+                        
+                        <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
+						  <td>Issued</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -300,13 +310,14 @@
                         <td>L1</td>
                         <td> 34,334.38</td>
                         <td>This_is_schedule</td>
-                        <td><i class="fas fa-check badge-success"></i></td>
+                        
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
+						  <td>Issued</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -316,15 +327,16 @@
                         <td>L1</td>
                         <td>34,334.38</td>
                         <td>This_is_schedule</td>
-                        <td><i class="fas fa-check badge-success"></i></td>
+                        
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
+						  <td>Issued</td>
                       </tr>
-                      <tr class="table-danger">
+                      <tr class="table-success">
                         <td>1</td>
                         <td>This_is_title</td>
                         <td>This_is_standard</td>
@@ -332,15 +344,16 @@
                         <td>L1</td>
                         <td>34,334.38</td>
                         <td>This_is_schedule</td>
-                        <td><i class="fas fa-times badge-danger"></i></td>
+                        
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
+						  <td>Closed</td>
                       </tr>
-                      <tr>
+                      <tr class="table-success">
                         <td>1</td>
                         <td>This_is_title</td>
                         <td>This_is_standard</td>
@@ -348,21 +361,22 @@
                         <td>L1</td>
                         <td>34,334.38</td>
                         <td>This_is_schedule</td>
-                        <td><i class="fas fa-check badge-success"></i></td>
+                        
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
                         <td> 10</td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
                         <td><i class="fas fa-check badge-success"></i></td>
+						  <td>Closed</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
               <div class="tab-pane" id="overdue" role="tabpanel" aria-labelledby="overdue-tab">
-                <h4>Overdue PDN</h4>
-                <div class="table-responsive table-striped">
+                <h4 class="mt-3 mb-3">Overdue PDN</h4>
+                <div class="table-responsive">
                   <table class="table table-sm table-hover">
                     <thead>
                       <tr>
@@ -376,6 +390,7 @@
                         <th scope="col">Date generated</th>
                         <th scope="col">Originator</th>
                         <th scope="col"># days open</th>
+
                       </tr>
                     </thead>
                     <tbody>
@@ -389,7 +404,7 @@
                         <td>This_is_schedule</td>
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
-                        <td> 10</td>
+                        <td> 14</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -401,7 +416,7 @@
                         <td>This_is_schedule</td>
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
-                        <td> 10</td>
+                        <td> 14</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -413,7 +428,7 @@
                         <td>This_is_schedule</td>
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
-                        <td> 10</td>
+                        <td> 14</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -425,7 +440,7 @@
                         <td>This_is_schedule</td>
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
-                        <td> 10</td>
+                        <td> 14</td>
                       </tr>
                       <tr>
                         <td>1</td>
@@ -437,7 +452,7 @@
                         <td>This_is_schedule</td>
                         <td>MMM / DD / YYYY</td>
                         <td>John Smith</td>
-                        <td> 10</td>
+                        <td> 14</td>
                       </tr>
                     </tbody>
                   </table>

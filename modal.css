@@ -1,4 +1,16 @@
-form-inline@charset "UTF-8";
+@charset "UTF-8";
+
+
+.modal-dialog {
+	height:100vh;
+	background: white;
+	position: absolute;
+	right: 0;
+	top:0;
+	margin: 0;
+	min-width: 60%;
+}
+
 .modal-full {
     min-width: 100%;
     margin: 0;
@@ -157,4 +169,10 @@ img {
 	margin-right: 20px;
 	position: relative;
 	max-height: 100px;
+}
+@media (max-width: 768px) 
+{
+	.modal-dialog {
+	min-width: 100%;
+}
 }

@@ -2,13 +2,16 @@
 
 
 .modal-dialog {
-	height:100vh;
+	min-height:100vh;
 	background: white;
 	position: absolute;
 	right: 0;
 	top:0;
 	margin: 0;
 	min-width: 60%;
+		-webkit-transform: translate3d(125%, 0, 0);
+	transform: translate3d(125%, 0, 0);
+	overflow-y: auto;
 }
 
 .modal-full {
@@ -35,6 +38,23 @@ header .fa-times-circle {
 table {
     background: #FFF !important;
 }
+.panel {
+	border: 1px solid #ebebeb;
+	background: #f1f1f1f;
+	box-shadow: 0 3px 4px #ebebeb;
+	border-radius: 3px;
+	color: #666;
+	margin: 0 0 5px 0;
+}
+.panel .btn-link {
+	color: #666;
+	text-decoration: none;
+}
+.panel .large {
+	font-size: 1em;
+	font-weight: 400;
+}
+
 .add-panel {
     background: #F7F7F7;
     border: 1px solid #CCC;

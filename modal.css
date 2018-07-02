@@ -66,6 +66,9 @@ table {
 .form-check-label {
     margin-right: 10px;
 }
+img {
+	display: inline-block;
+}
 .impacts_section .btn-secondary {
     background: #666;
     color: #CCC;
@@ -127,9 +130,6 @@ label {
     font-weight: 400 !important;
     color: gray;
 }
-.card:hover {
-    background: rgba(209, 232, 255, 0.306);
-}
 .popup-status-container .breadcrumb {
     float: none;
     text-align: center !important;
@@ -163,7 +163,7 @@ label {
   -ms-user-select: none;
   user-select: none;
 }
-img {
+img .signature {
   position: absolute;
   left: 0;
   top: 0;

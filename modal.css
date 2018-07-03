@@ -21,9 +21,15 @@
 .modal-full .modal-content {
     min-height: 100vh;
 }
+
+.modal-content .container-fluid {
+	background: #Fff;
+	
+}
 header {
     background: rgba(50, 105, 175, 0.10);
     color: #3269AF;
+	border-bottom: 1px solid #fff;
 }
 header h3 {
     font-weight: lighter;
@@ -38,6 +44,11 @@ header .fa-times-circle {
 table {
     background: #FFF !important;
 }
+
+table .badge {
+	float: right;
+	width: 100%;
+}
 .panel {
 	border: 1px solid #ebebeb;
 	background: #f1f1f1f;
@@ -46,19 +57,33 @@ table {
 	color: #666;
 	margin: 0 0 5px 0;
 }
+.panel .clearfix {
+	font-weight: 600;
+}
 .panel .btn-link {
 	color: #666;
 	text-decoration: none;
 }
 .panel .large {
-	font-size: 1em;
+	font-size: .75em;
 	font-weight: 400;
 }
-
+.panel .inactive {
+	background: #efefef;
+	border: 1px solid #ccc;
+}
+.panel .rejected {
+	border-left: 5px solid #DC3545;
+	border-radius: 3px;
+}
 .add-panel {
-    background: #F7F7F7;
+    background: #F0F3F8;
     border: 1px solid #CCC;
     border-radius: 4px;
+}
+.add-panel .panel {
+	background: #fff;
+	box-shadow: none;
 }
 .add-panel .btn {
     margin: 10px auto;
@@ -66,8 +91,9 @@ table {
 .form-check-label {
     margin-right: 10px;
 }
-img {
+.signature {
 	display: inline-block;
+	width: 200px;
 }
 .impacts_section .btn-secondary {
     background: #666;
@@ -84,6 +110,9 @@ label {
     font-size: 0.85em;
     font-weight: 600;
 }
+.btn-link, .btn {
+	text-decoration: none;
+}
 .btn-outline-secondary {
     border: 1px solid rgba(143, 143, 143, 1.00);
 }
@@ -94,6 +123,11 @@ label {
 .btn-outline-dark:hover, .btn-outline-secondary:hover {
     background: #3269AF;
     color: #fff !important;
+}
+.edit-list {
+	display: block;
+	margin-button: -2em;
+	line-height: -10px;
 }
 .level-option .btn-outline-secondary {
     text-align: left;
@@ -195,4 +229,9 @@ img .signature {
 	.modal-dialog {
 	min-width: 100%;
 }
+}
+
+
+[data-toggle="collapse"] {
+  cursor: pointer;
 }

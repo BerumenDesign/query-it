@@ -314,49 +314,58 @@
             <button class="btn btn-link" data-toggle="collapse" data-target="#editPanel" aria-expanded="false" aria-controls="editPanel"><i class="fa fa-edit"></i> Edit list</button>
           </h6>
           <div id="editPanel" class="add-panel p-4 collapse">
-            <h6>Edit approver's list</h6>
+            <h6>Add approvers</h6>
             <form>
               <div class="form-group">
                 <label for="newApprover">Approver name</label>
                 <input type="type" class="form-control" id="newApprover">
                 <label for="approverTitle">Approver title</label>
-                <input type="email" class="form-control" id="newApproverTitle" aria-describedby="titleApprover" >
+                <input type="type" class="form-control" id="newApproverTitle" aria-describedby="titleApprover" >
                 <label for="approverEmail1">Email address</label>
                 <input type="email" class="form-control" id="newApproverEmail" aria-describedby="emailApprover">
+				  <label for="newApproverCompany">Company</label>
+				                <input type="type" class="form-control" id="newApproverCompany" aria-describedby="companyApprover" >
                 <div class="row text-center">
                   <button type="submit" class="btn text-center btn-outline-dark">Add approver</button>
                 </div>
               </div>
             </form>
             <hr/>
-            <h6>Approver list</h6>
-            <div class="panel p-2">
-              <div class="row">
-                <div class="col col-sm-6 col-md-4"><span class="clearfix">Jane Williams</span> <span class="small">Engineer Manager</span></div>
-                <div class="col col-sm-3 col-md-4 small"> <a href="email:#">janea@williams.com</a> </div>
-                <div class="col col-sm-3 col-md-4 text-right">
-                  <button class="btn btn-link"><i class="fa fa-trash-o"></i></button>
-                </div>
-              </div>
-            </div>
-            <div class="panel p-2">
-              <div class="row">
-                <div class="col col-sm-6 col-md-4"><span class="clearfix">John Williams</span> <span class="small">Engineer Manager</span></div>
-                <div class="col col-sm-3 col-md-4 small"><a href="email:#">john@williams.com</a></div>
-                <div class="col col-sm-3 col-md-4 text-right">
-                  <button class="btn btn-link"><i class="fa fa-trash-o"></i></button>
-                </div>
-              </div>
-            </div>
-            <div class="panel p-2">
-              <div class="row">
-                <div class="col col-sm-6 col-md-4"><span class="clearfix">Michael Smith</span><span class="small">Engineer Manager</span></div>
-                <div class="col col-sm-3 col-md-4 small"><a href="email:#">michael@williams.com</a></div>
-                <div class="col col-sm-3 col-md-4 text-right">
-                  <button class="btn btn-link"><i class="fa fa-trash-o"></i></button>
-                </div>
-              </div>
-            </div>
+			  <h6>List of approvers</h6>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Approver</th>
+                <th scope="col">Title</th>
+				<th scope="col">Email</th>
+				<th scope="col">Company</th>
+				<th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">James Williams</td>
+				  <td scope="row">Product Manager</td>
+				 <td scope="row">james@williams.com</td>
+				  <td scope="col">Company name</td>
+                                <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
+              </tr>
+              <tr>
+                <td scope="row">James Williams</td>
+				  <td scope="row">Product Manager</td>
+				 <td scope="row">james@williams.com</td>
+				  <td scope="col">Company name</td>
+                                <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
+              </tr>
+              <tr>
+                <td scope="row">James Williams</td>
+				  <td scope="row">Product Manager</td>
+				 <td scope="row">james@williams.com</td>
+				  <td scope="col">Company name</td>
+                                <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
             <hr/>
             <div class="text-right">
               <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>

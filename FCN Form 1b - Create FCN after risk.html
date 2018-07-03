@@ -28,7 +28,7 @@
   </div>
 </header>
 <!-- This is where content starts -->
-<div class="container p-4">
+<div class="container-fluid p-4">
 <!-- This is where header starts -->
 <section>
   <nav aria-label="breadcrumb" class="mb-4">
@@ -134,17 +134,17 @@
           <tr>
             <th scope="row">123456</th>
             <td>v1</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
           </tr>
           <tr>
             <th scope="row">123456</th>
             <td>v2</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
           </tr>
           <tr>
             <th scope="row">123456</th>
             <td>v3</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
           </tr>
         </tbody>
       </table>
@@ -190,15 +190,15 @@
         <tbody>
           <tr>
             <td scope="row">Discipline 1</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
           </tr>
           <tr>
             <td scope="row">Discipline 2</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
           </tr>
           <tr>
             <td scope="row">Discipline 3</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
           </tr>
         </tbody>
       </table>
@@ -206,61 +206,7 @@
   </div>
 </section>
 	
-	
-	<div class="row">
-    <div class="form-group col-12 p-3">
-      <label for="inputChange5" class="mr-4 h6">Are other disciplines affected?</label>
-      <div class="btn-group btn-group-toggle impacts_section" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked>
-          Yes </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off">
-          No </label>
-      </div>
-      <button type="button" class="btn btn-outline-info btn-info" data-toggle="tooltip" data-placement="top" title="If yes clicked, then ability to select the other impacted disciplines.Action created called 'This change impacts the xxx, xxx, and xxx disciplines.  Issue change notices for impacted disciplines'"><i class="fa fa-info"></i></button>
-    </div>
-    <h5 class="col-12">Disciplines affected</h5>
-    <div class="col col-sm-12 col-md-6">
-      <div class="p-4 add-panel">
-        <form>
-          <h6>Add discipline</h6>
-          <div class="form-group">
-            <label>Document #</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="text-center">
-            <button class="btn btn-outline-dark"><em class="fa fa-plus"></em> Add discipline</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="col col-sm-12 col-md-6">
-      <h6>Impacted discipline:</h6>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Discipline</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="row">Discipline 1</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
-          </tr>
-          <tr>
-            <td scope="row">Discipline 2</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
-          </tr>
-          <tr>
-            <td scope="row">Discipline 3</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-		</div>
+
 
 	
 <!-- This is risk, cost and schedule -->
@@ -335,8 +281,8 @@
             </div>
           </div>
           <div class="form-group">
-          <label>Likelihood Level</label>
-          <br/>
+            <label>Select likelihood Level</label>
+            <br/>
           <form>
             <div class="btn-group-toggle impacts_section mb-0 level-option row" data-toggle="buttons">
               <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0">

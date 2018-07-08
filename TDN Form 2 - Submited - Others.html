@@ -18,12 +18,12 @@
 </head>
 
 <body>
-<div class="card m-4 text-center">Form 2 Submit PDN - Originator</div>
+<div class="card m-4 text-center">Form 2 Submit TDN - Originator</div>
 <div class="modal-content"> 
   <!-- This is where header starts -->
   <header class="pt-2 pb-2 pl-4">
     <div class="float-left pt-2">
-      <h3>Issued PDN</h3>
+      <h3>Approve TDN</h3>
     </div>
     <div class="float-right">
       <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
@@ -49,71 +49,95 @@
     <div class="card">
       <div id="headingReview">
         <button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseReview" aria-expanded="false" aria-controls="collapseReview">
-        <h5>Issued PDN </h5>
+        <h5>Issued TDN </h5>
         </button>
         <div id="collapseReview" class="collapse p-4" aria-labelledby="headingOne">
-          <div class="form-row form-inline">
-            <div class="form-group col-sm-12 ">
-              <label>Title: </label>
-              This is Title<br/>
-            </div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Plant:</label>
-              Plant 101</div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Discipline:</label>
-              Piping</div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Tag:</label>
-              101PIP100 </div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Category: </label>
-              Technical</div>
-          </div>
-          <div class="form-group mt-3">
-            <label for="inputReason3">Describe existing condition / Current issue:</label>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus et dolor quis aliquam. Suspendisse vestibulum lobortis sapien at tincidunt. Quisque rhoncus sollicitudin odio ut fringilla. Donec est risus, vulputate molestie odio ut, tristique malesuada nisl. Proin a varius elit.</p>
-          </div>
-          <div class="form-group">
-            <label for="inputChange6">Describe recommended solution / decision:</label>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus et dolor quis aliquam. Suspendisse vestibulum lobortis sapien at tincidunt. Quisque rhoncus sollicitudin odio ut fringilla. Donec est risus, vulputate molestie odio ut, tristique malesuada nisl. Proin a varius elit.</p>
-          </div>
-          <h6>Economic Risk level  III (Consequence 2, Likelihood 3)</h6>
-          <div class="form-group">
+<form>
+  <div class="form-row form-inline">
+    <div class="form-group col-sm-12 ">
+      <label>Title: </label>
+		This is Title<br/>
+    </div>
+    <div class="form-group col-sm-6 col-md-3">
+      <label>Plant:</label>
+Plant 101</div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Discipline:</label>
+Piping</div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Tag:</label>
+      101PIP100 </div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Standard:</label>
+Std001</div>
+
+  </div>
+	
+    <div class="form-group mt-4">
+	<h6>Technical Standard requiment / intend</h6>
+	<label>Section #: </label>
+	Section 2</div>
+		  <div class="form-group mt-3">
+	    <label for="inputReason2">List the intent of the standard/section being deviated from:</label>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
+  </div>
+	  <div class="form-group mt-3">
+	    <label for="inputReason2">Describe Deviation:</label>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
+  </div>
+  <div class="form-group">
+    <label for="inputChange6">Provide Reasons for deviation:</label>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
+  </div>
+
+	<h6>Economic Risk level  III (Consequence 2, Likelihood 3)</h6>
+	          <div class="form-group">
             <label for="inputRiskMit">Describe risk mitigation(s):</label>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus et dolor quis aliquam. Suspendisse vestibulum lobortis sapien at tincidunt. Quisque rhoncus sollicitudin odio ut fringilla. Donec est risus, vulputate molestie odio ut, tristique malesuada nisl. Proin a varius elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
           </div>
-          <div class="form-row row form-inline align-items-start">
-            <div class="col-sm-12 col-md-6 ">
-              <div class="form-group">
-                <label>Cost savings of:</label>
-                $50,000</div>
-              <div class="form-group">
-                <label>Schedule impact of:</label>
-                4 months</div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h6>Impacted drawing list:</h6>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Drawing #</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">123456</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">123456</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">123456</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+	  <div class="form-row row form-inline align-items-start">
+		      <div class="col-sm-12 col-md-6 ">
+          <div class="form-group">
+      <label>Cost savings of:</label>
+$50,000</div>
+   <div class="form-group">
+      <label>Schedule impact of:</label>
+4 months</div></div>
+
+		  <div class="col-sm-12 col-md-6">
+
+        <h6>Impacted drawing list:</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Drawing #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+		  
+  </div>
+
+</div>
+
+    
+
+	</form>
+          
           <hr>
           <div>
             <h6>Signed by: Tim Williams</h6>
@@ -128,20 +152,145 @@
         <h5>Approvals <span class="badge badge-success"><em class="fa fa-check"></em> 3</span> <span class="badge-danger badge"><em class="fa fa-times"></em> 3</span> <span class="badge-dark badge"><em class="fa fa-question"></em> 3</span></h5>
         </button>
         <div id="collapseApprovals" class="collapse show p-4" aria-labelledby="headingOne">
-          <h6><strong>Originator:</strong> Company 1
-            <button class="btn btn-link"><i class="fa fa-edit"></i> Edit list</button>
-          </h6>
+          <h6><strong>Originator:</strong> Company 1 </h6>
           <div class="panel">
             <div id="OrComp0" class="p-3">
               <div class="row" data-toggle="collapse" data-target="#OrCompPanel0" aria-expanded="true" aria-controls="OrCompPanel0">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">Jane Williams</span> <span class="small">Engineer Manager</span></div>
-                <div class="col col-sm-3 col-md-4"> </div>
-                <div class="col col-sm-3 col-md-4 text-right"><span class="badge badge-dark large p-2"><i class="fa fa-question"></i> No response</span></div>
+                <div class="col col-sm-6 col-md-8 text-right"><span class="mr-3 h6">Do you approve this TDN?</span>
+                  <div class="btn-group h6">
+                    <button id="headingOne" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Yes </button>
+                    <button id="headingTwo" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> No </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="accordion">
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <section class="row">
+                    <div class="form-group mb-6 col-sm-12">
+                      <h5>Approved PDN </h5>
+                      <div class="p-4 add-panel">
+                        <h5>Include action</h5>
+                        <form>
+                          <div class="row">
+                            <div class="form-group col col-lg-12">
+                              <label for="actionDesc">Describe action: </label>
+                              <textarea id="actionDesc" class="form-control" placeholder=""></textarea>
+                            </div>
+                            <div class="form-group col col-lg-4 col-sm-12">
+                              <label for="actionAssignee">Assigned to: </label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col col-lg-4 col-sm-12">
+                              <label for="actionEmail">Email: </label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col col-lg-4 col-sm-12">
+                              <label for="actionAssignee">Due date: </label>
+                              <input type="date" class="form-control" placeholder="Asignee name">
+                            </div>
+                          </div>
+                        </form>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">Save action</button>
+                        </div>
+                      </div>
+                      <h5 class="mt-4">Action List</h5>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Description</th>
+                            <th>Asignee</th>
+                            <th>Email</th>
+                            <th>Due</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                            <td>John Smith</td>
+                            <td>john@smith.com</td>
+                            <td>Jun/23/2018</td>
+                            <td><button class="btn btn-light"><i class="fa fa-trash"></i></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                            <td>John Smith</td>
+                            <td>john@smith.com</td>
+                            <td>Jun/23/2018</td>
+                            <td><button class="btn btn-light"><i class="fa fa-trash"></i></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                            <td>John Smith</td>
+                            <td>john@smith.com</td>
+                            <td>Jun/23/2018</td>
+                            <td><button class="btn btn-light"><i class="fa fa-trash"></i></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <hr/>
+                      <div class="row justify-content-around">
+                        <div class="col-auto">
+                          <h6>Sign into the box below</h6>
+                          <div class="wrapper card">
+                            <canvas id="signature-pad" class="signature-pad" width="400" height="200"></canvas>
+                          </div>
+                          <div class="btn-group float-right">
+                            <button id="cldear" class="btn btn-outline-secondary">Clear</button>
+                            <button id="save" class="btn btn-outline-secondary">Save</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- button bar -->
+                      <hr>
+                      <div class="text-right p-4">
+                        <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
+                        <button type="button" class="btn btn-success">Confirm Approval and Actions</button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="form-group">
+                    <h5>Rejected PDN</h5>
+                    <label for="actionDesc">Describe reasons for rejection: </label>
+                    <textarea id="actionDesc" class="form-control" placeholder=""></textarea>
+                  </div>
+                  <hr/>
+                  <div class="row justify-content-around">
+                    <div class="col-auto">
+                      <h6>Sign into the box below</h6>
+                      <div class="wrapper card">
+                        <canvas id="signature-pad" class="signature-pad" width="400" height="200"></canvas>
+                      </div>
+                      <div class="btn-group float-right">
+                        <button id="cldear" class="btn btn-outline-secondary">Clear</button>
+                        <button id="save" class="btn btn-outline-secondary">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- button bar -->
+                  <hr>
+                  <div class="text-right p-4">
+                    <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
+                    <button type="button" class="btn btn-success">Confirm rejection</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="panel">
-            <div id="OrComp1" class="p-3">
+            <div id="OrComp1" class="p-3 inactive">
               <div class="row" data-toggle="collapse" data-target="#OrCompPanel1" aria-expanded="true" aria-controls="OrCompPanel1">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">John Williams</span> <span class="small">Project manager</span></div>
                 <div class="col col-sm-3 col-md-4">Jul 21, 2017, 15:03 MST </div>
@@ -152,7 +301,7 @@
               <div class="card-body"> 
                 <!-- If approved enter actions -->
                 <h5>Action List <span class="badge-warning badge ml-4"><i class="fa fa-folder-open"></i> 3</span> <span class="badge-info badge"><i class="fa fa-folder-o"></i> 3</span> <span class="badge-primary badge"><i class="fa fa-folder"></i> 3</span> </h5>
-                <table class="table table-responsive">
+                <table class="table">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -161,7 +310,6 @@
                       <th>Email</th>
                       <th>Due</th>
                       <th>Status</th>
-                      <th>Confirmation</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -172,7 +320,6 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-primary badge p-1"> <i class="fa fa-folder"></i> Confirmed</span></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
@@ -181,7 +328,6 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-info badge p-1"><i class="fa fa-folder-o"></i> Completed</span></td>
-                      <td><button class="btn btn-outline-secondary"> Confirm</button></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -190,7 +336,6 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-warning badge p-1"><i class="fa fa-folder-open"></i> Open</span></td>
-                      <td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -203,7 +348,7 @@
             </div>
           </div>
           <div class="panel">
-            <div id="OrComp2" class="p-3 rejected">
+            <div id="OrComp2" class="p-3 rejected inactive">
               <div class="row" data-toggle="collapse" data-target="#OrCompPanel2" aria-expanded="true" aria-controls="OrCompPanel2">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">Michael Smith</span> <span class="small">Project manager</span></div>
                 <div class="col col-sm-3 col-md-4">Jul 21, 2017, 15:03 MST </div>
@@ -223,11 +368,9 @@
               </div>
             </div>
           </div>
-          <h6 class="mt-4"><strong>Client Project Team:</strong> Company 2
-            <button class="btn btn-link"><i class="fa fa-edit"></i> Edit list</button>
-          </h6>
+          <h6 class="mt-4"><strong>Client Project Team:</strong> Company 2 </h6>
           <div class="panel">
-            <div id="OrClient0" class="p-3">
+            <div id="OrClient0" class="p-3 inactive">
               <div class="row" data-toggle="collapse" data-target="#OrClientPanel0" aria-expanded="true" aria-controls="OrClientPanel0">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">Jane Williams</span> <span class="small">Engineer Manager</span></div>
                 <div class="col col-sm-3 col-md-4"> </div>
@@ -236,7 +379,7 @@
             </div>
           </div>
           <div class="panel">
-            <div id="OrClient1" class="p-3">
+            <div id="OrClient1" class="p-3 inactive">
               <div class="row" data-toggle="collapse" data-target="#OrClientPanel1" aria-expanded="true" aria-controls="OrClientPanel1">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">John Williams</span> <span class="small">Project manager</span></div>
                 <div class="col col-sm-3 col-md-4">Jul 21, 2017, 15:03 MST </div>
@@ -247,7 +390,7 @@
               <div class="card-body"> 
                 <!-- If approved enter actions -->
                 <h5>Action List</h5>
-                <table class="table table-responsive">
+                <table class="table">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -256,7 +399,6 @@
                       <th>Email</th>
                       <th>Due</th>
                       <th>Status</th>
-                      <th>Confirmation</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -266,7 +408,6 @@
                       <td>John Smith</td>
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
-                      <td><span class="badge-primary badge p-1"> <i class="fa fa-folder"></i> Confirmed</span></td>
                       <td></td>
                     </tr>
                     <tr>
@@ -275,8 +416,7 @@
                       <td>John Smith</td>
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
-                      <td><span class="badge-info badge p-1"><i class="fa fa-folder-o"></i> Completed</span></td>
-                      <td><button class="btn btn-outline-secondary"> Confirm</button></td>
+                      <td></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -284,7 +424,6 @@
                       <td>John Smith</td>
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
-                      <td><span class="badge-warning badge p-1"><i class="fa fa-folder-open"></i> Open</span></td>
                       <td></td>
                     </tr>
                   </tbody>
@@ -298,7 +437,7 @@
             </div>
           </div>
           <div class="panel">
-            <div id="OrClient2" class="p-3 rejected">
+            <div id="OrClient2" class="p-3 rejected inactive">
               <div class="row" data-toggle="collapse" data-target="#OrClientPanel2" aria-expanded="true" aria-controls="OrClientPanel2">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">Michael Smith</span> <span class="small">Project manager</span></div>
                 <div class="col col-sm-3 col-md-4">Jul 21, 2017, 15:03 MST </div>
@@ -318,70 +457,9 @@
               </div>
             </div>
           </div>
-          <h6  class="mt-4"><strong>Client Asset Owner:</strong> Owner Names 3
-            <button class="btn btn-link" data-toggle="collapse" data-target="#editPanel" aria-expanded="false" aria-controls="editPanel"><i class="fa fa-edit"></i> Edit list</button>
-          </h6>
-          <div id="editPanel" class="add-panel p-4 collapse">
-            <h6>Add approvers</h6>
-            <form>
-              <div class="form-group">
-                <label for="newApprover">Approver name</label>
-                <input type="type" class="form-control" id="newApprover">
-                <label for="approverTitle">Approver title</label>
-                <input type="type" class="form-control" id="newApproverTitle" aria-describedby="titleApprover" >
-                <label for="approverEmail1">Email address</label>
-                <input type="email" class="form-control" id="newApproverEmail" aria-describedby="emailApprover">
-                <label for="newApproverCompany">Company</label>
-                <input type="type" class="form-control" id="newApproverCompany" aria-describedby="companyApprover" >
-                <div class="row text-center">
-                  <button type="submit" class="btn text-center btn-outline-dark">Add approver</button>
-                </div>
-              </div>
-            </form>
-            <hr/>
-            <h6>List of approvers</h6>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Approver</th>
-                  <th scope="col">Title</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Company</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">James Williams</td>
-                  <td scope="row">Product Manager</td>
-                  <td scope="row">james@williams.com</td>
-                  <td scope="col">Company name</td>
-                  <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
-                </tr>
-                <tr>
-                  <td scope="row">James Williams</td>
-                  <td scope="row">Product Manager</td>
-                  <td scope="row">james@williams.com</td>
-                  <td scope="col">Company name</td>
-                  <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
-                </tr>
-                <tr>
-                  <td scope="row">James Williams</td>
-                  <td scope="row">Product Manager</td>
-                  <td scope="row">james@williams.com</td>
-                  <td scope="col">Company name</td>
-                  <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
-                </tr>
-              </tbody>
-            </table>
-            <hr/>
-            <div class="text-right">
-              <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
-              <button type="button" class="btn btn-success">Save changes</button>
-            </div>
-          </div>
+          <h6  class="mt-4"><strong>Client Asset Owner:</strong> Owner Names 3 </h6>
           <div class="panel">
-            <div id="OrOwnert0" class="p-3">
+            <div id="OrOwnert0" class="p-3 inactive">
               <div class="row" data-toggle="collapse" data-target="#OrOwnerPanel0" aria-expanded="true" aria-controls="OrOwnerPanel0">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">Jane Williams</span> <span class="small">Engineer Manager</span></div>
                 <div class="col col-sm-3 col-md-4"> </div>
@@ -390,7 +468,7 @@
             </div>
           </div>
           <div class="panel">
-            <div id="OrOwner1" class="p-3">
+            <div id="OrOwner1" class="p-3 inactive">
               <div class="row" data-toggle="collapse" data-target="#OrOwnerPanel1" aria-expanded="true" aria-controls="OrOwnerPanel1">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">John Williams</span> <span class="small">Project manager</span></div>
                 <div class="col col-sm-3 col-md-4">Jul 21, 2017, 15:03 MST </div>
@@ -401,7 +479,7 @@
               <div class="card-body"> 
                 <!-- If approved enter actions -->
                 <h5>Action List</h5>
-                <table class="table table-responsive">
+                <table class="table">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -410,7 +488,6 @@
                       <th>Email</th>
                       <th>Due</th>
                       <th>Status</th>
-                      <th>Confirmation</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -420,7 +497,6 @@
                       <td>John Smith</td>
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
-                      <td><span class="badge-primary badge p-1"> <i class="fa fa-folder"></i> Confirmed</span></td>
                       <td></td>
                     </tr>
                     <tr>
@@ -429,8 +505,7 @@
                       <td>John Smith</td>
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
-                      <td><span class="badge-info badge p-1"><i class="fa fa-folder-o"></i> Completed</span></td>
-                      <td><button class="btn btn-outline-secondary"> Confirm</button></td>
+                      <td></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -438,7 +513,6 @@
                       <td>John Smith</td>
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
-                      <td><span class="badge-warning badge p-1"><i class="fa fa-folder-open"></i> Open</span></td>
                       <td></td>
                     </tr>
                   </tbody>
@@ -452,7 +526,7 @@
             </div>
           </div>
           <div class="panel">
-            <div id="OrOwner2" class="p-3 rejected">
+            <div id="OrOwner2" class="p-3 rejected inactive">
               <div class="row" data-toggle="collapse" data-target="#OrOwnerPanel2" aria-expanded="true" aria-controls="OrOwnerPanel2">
                 <div class="col col-sm-6 col-md-4"><span class="clearfix">Michael Smith</span> <span class="small">Project manager</span></div>
                 <div class="col col-sm-3 col-md-4">Jul 21, 2017, 15:03 MST </div>
@@ -475,10 +549,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="text-right p-4">
-    <button type="button" class="btn btn-outline-secondary float-left">Close</button>
-    <button type="button" class="btn btn-success">Edit PDN</button>
   </div>
 </div>
 

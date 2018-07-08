@@ -40,7 +40,7 @@
   </div>
 </header>
 <!-- This is where content starts -->
-<div class="container p-4 popup-status-container"> 
+<div class="container p-4"> 
   <!-- This is where header starts -->
   <section class="text-center">
     <nav aria-label="breadcrumb">
@@ -50,17 +50,19 @@
       </ol>
     </nav>
     <h4>PDN: 12345</h4>
-    <p>by Tim Williams / Jul 21, 2017 13:01</p>
-    <a class="btn btn-outline-secondary col-md-6 col-sm-12 mb-3 mt-3">Do you want to add attachments? (Optional)</a> </section>
+	   <button class="btn btn-outline-secondary col-md-6 col-sm-12 large" type="button" data-toggle="collapse" data-target="#collapseAttachment" aria-expanded="false" aria-controls="collapseAttachment">Do you want to add attachments? (Optional) </button>
+</section>
   
-  <!-- This is Action and impacts section -->
-  
-  <h4>Actions & Impacts</h4>
-  <div class="row">
-    <div class="form-group mb-6 col-sm-12 col-md-6">
+  <!-- This is Upload section -->
+  <div class="container">
+  <div id="collapseAttachment" class="row collapse justify-content-md-center ml-5 mr-5">
+	  <form class="col-sm-12">
+	  <h4 class="mt-4">Add attachments</h4>
+	  
+    <div class="form-group">
       <div class="upload-drop-zone" id="drop-zone"><i class="fa fa-cloud-upload fa-2x"></i> Drop file here or click to select file</div>
     </div>
-    <div class="form-group col-sm-12 col-md-6">
+    <div class="form-group">
       <h6>Uploaded documents</h6>
       <table class="table table-striped">
         <thead>
@@ -72,20 +74,22 @@
         <tbody>
           <tr>
             <td scope="row">123456</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+            <td class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
           </tr>
           <tr>
             <td scope="row">123456</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+            <td class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
           </tr>
           <tr>
             <td scope="row">123456</td>
-            <td><i class="fa fa-times fa-2x float-right"></i></td>
+            <td class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
           </tr>
         </tbody>
       </table>
     </div>
+		  </form>
   </div>
+</div>
   
   <!-- button bar -->
   

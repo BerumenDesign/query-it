@@ -18,12 +18,12 @@
 </head>
 
 <body>
-<div class="card m-4 text-center">Form 2 Submit PDN - Originator</div>
+<div class="card m-4 text-center">Form 2 Submit TDN - Originator</div>
 <div class="modal-content"> 
   <!-- This is where header starts -->
   <header class="pt-2 pb-2 pl-4">
     <div class="float-left pt-2">
-      <h3>Issued PDN</h3>
+      <h3>Issued TDN</h3>
     </div>
     <div class="float-right">
       <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
@@ -39,81 +39,104 @@
           <li class="breadcrumb-item"><a href="#">Company</a></li>
           <li class="breadcrumb-item active" aria-current="page">Project</li>
         </ol>
-        <h4>PDN:&nbsp;101-PIP-PDN-10</h4>
+        <h4>PDN:&nbsp;101-PIP-TDN-10</h4>
         <h6>by Tim Williams / Company xx / July 21, 2017 13:01</h6>
       </nav>
     </section>
-    <div class="alert alert-danger" role="alert"><i class="fa fa-bell"></i> <strong>This PDN has been rejected.</strong> Check reasons for rejection and edit it if it is necessary. </div>
+    <div class="alert alert-danger" role="alert"><i class="fa fa-bell"></i> <strong>This TDN has been rejected.</strong> Check reasons for rejection and edit it if it is necessary. </div>
     
     <!-- This is where issued form starts -->
     <div class="card">
       <div id="headingReview">
         <button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseReview" aria-expanded="false" aria-controls="collapseReview">
-        <h5>Issued PDN </h5>
+        <h5>Issued TDN </h5>
         </button>
         <div id="collapseReview" class="collapse p-4" aria-labelledby="headingOne">
-          <div class="form-row form-inline">
-            <div class="form-group col-sm-12 ">
-              <label>Title: </label>
-              This is Title<br/>
-            </div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Plant:</label>
-              Plant 101</div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Discipline:</label>
-              Piping</div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Tag:</label>
-              101PIP100 </div>
-            <div class="form-group col-sm-6 col-md-3">
-              <label>Category: </label>
-              Technical</div>
-          </div>
-          <div class="form-group mt-3">
-            <label for="inputReason3">Describe existing condition / Current issue:</label>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus et dolor quis aliquam. Suspendisse vestibulum lobortis sapien at tincidunt. Quisque rhoncus sollicitudin odio ut fringilla. Donec est risus, vulputate molestie odio ut, tristique malesuada nisl. Proin a varius elit.</p>
-          </div>
-          <div class="form-group">
-            <label for="inputChange6">Describe recommended solution / decision:</label>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus et dolor quis aliquam. Suspendisse vestibulum lobortis sapien at tincidunt. Quisque rhoncus sollicitudin odio ut fringilla. Donec est risus, vulputate molestie odio ut, tristique malesuada nisl. Proin a varius elit.</p>
-          </div>
-          <h6>Economic Risk level  III (Consequence 2, Likelihood 3)</h6>
-          <div class="form-group">
+<form>
+  <div class="form-row form-inline">
+    <div class="form-group col-sm-12 ">
+      <label>Title: </label>
+		This is Title<br/>
+    </div>
+    <div class="form-group col-sm-6 col-md-3">
+      <label>Plant:</label>
+Plant 101</div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Discipline:</label>
+Piping</div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Tag:</label>
+      101PIP100 </div>
+   <div class="form-group col-sm-6 col-md-3">
+      <label>Standard:</label>
+Std001</div>
+
+  </div>
+	
+    <div class="form-group mt-4">
+	<h6>Technical Standard requiment / intend</h6>
+	<label>Section #: </label>
+	Section 2</div>
+		  <div class="form-group mt-3">
+	    <label for="inputReason2">List the intent of the standard/section being deviated from:</label>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
+  </div>
+	  <div class="form-group mt-3">
+	    <label for="inputReason2">Describe Deviation:</label>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
+  </div>
+  <div class="form-group">
+    <label for="inputChange6">Provide Reasons for deviation:</label>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
+  </div>
+
+	<h6>Economic Risk level  III (Consequence 2, Likelihood 3)</h6>
+	          <div class="form-group">
             <label for="inputRiskMit">Describe risk mitigation(s):</label>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus et dolor quis aliquam. Suspendisse vestibulum lobortis sapien at tincidunt. Quisque rhoncus sollicitudin odio ut fringilla. Donec est risus, vulputate molestie odio ut, tristique malesuada nisl. Proin a varius elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique varius nisi ut lobortis. Integer neque sem, ultrices et ultricies eu, hendrerit non lorem. </p>
           </div>
-          <div class="form-row row form-inline align-items-start">
-            <div class="col-sm-12 col-md-6 ">
-              <div class="form-group">
-                <label>Cost savings of:</label>
-                $50,000</div>
-              <div class="form-group">
-                <label>Schedule impact of:</label>
-                4 months</div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h6>Impacted drawing list:</h6>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Drawing #</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">123456</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">123456</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">123456</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+	  <div class="form-row row form-inline align-items-start">
+		      <div class="col-sm-12 col-md-6 ">
+          <div class="form-group">
+      <label>Cost savings of:</label>
+$50,000</div>
+   <div class="form-group">
+      <label>Schedule impact of:</label>
+4 months</div></div>
+
+		  <div class="col-sm-12 col-md-6">
+
+        <h6>Impacted drawing list:</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Drawing #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+            <tr>
+              <td scope="row">123456</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+		  
+  </div>
+
+</div>
+
+    
+
+	</form>
           <hr>
           <div>
             <h6>Signed by: Tim Williams</h6>
@@ -161,7 +184,7 @@
                       <th>Email</th>
                       <th>Due</th>
                       <th>Status</th>
-                      <th>Confirmation</th>
+						<th>Confirmation</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -172,7 +195,7 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-primary badge p-1"> <i class="fa fa-folder"></i> Confirmed</span></td>
-                      <td></td>
+						<td></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
@@ -181,7 +204,9 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-info badge p-1"><i class="fa fa-folder-o"></i> Completed</span></td>
-                      <td><button class="btn btn-outline-secondary"> Confirm</button></td>
+						<td>
+						<button class="btn btn-outline-secondary"> Confirm</button>
+						</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -190,7 +215,7 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-warning badge p-1"><i class="fa fa-folder-open"></i> Open</span></td>
-                      <td></td>
+						<td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -247,7 +272,7 @@
               <div class="card-body"> 
                 <!-- If approved enter actions -->
                 <h5>Action List</h5>
-                <table class="table table-responsive">
+                               <table class="table table-responsive">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -256,7 +281,7 @@
                       <th>Email</th>
                       <th>Due</th>
                       <th>Status</th>
-                      <th>Confirmation</th>
+						<th>Confirmation</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -267,7 +292,7 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-primary badge p-1"> <i class="fa fa-folder"></i> Confirmed</span></td>
-                      <td></td>
+						<td></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
@@ -276,7 +301,9 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-info badge p-1"><i class="fa fa-folder-o"></i> Completed</span></td>
-                      <td><button class="btn btn-outline-secondary"> Confirm</button></td>
+						<td>
+						<button class="btn btn-outline-secondary"> Confirm</button>
+						</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -285,7 +312,7 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-warning badge p-1"><i class="fa fa-folder-open"></i> Open</span></td>
-                      <td></td>
+						<td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -331,49 +358,49 @@
                 <input type="type" class="form-control" id="newApproverTitle" aria-describedby="titleApprover" >
                 <label for="approverEmail1">Email address</label>
                 <input type="email" class="form-control" id="newApproverEmail" aria-describedby="emailApprover">
-                <label for="newApproverCompany">Company</label>
-                <input type="type" class="form-control" id="newApproverCompany" aria-describedby="companyApprover" >
+				  <label for="newApproverCompany">Company</label>
+				                <input type="type" class="form-control" id="newApproverCompany" aria-describedby="companyApprover" >
                 <div class="row text-center">
                   <button type="submit" class="btn text-center btn-outline-dark">Add approver</button>
                 </div>
               </div>
             </form>
             <hr/>
-            <h6>List of approvers</h6>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Approver</th>
-                  <th scope="col">Title</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Company</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">James Williams</td>
-                  <td scope="row">Product Manager</td>
-                  <td scope="row">james@williams.com</td>
-                  <td scope="col">Company name</td>
-                  <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
-                </tr>
-                <tr>
-                  <td scope="row">James Williams</td>
-                  <td scope="row">Product Manager</td>
-                  <td scope="row">james@williams.com</td>
-                  <td scope="col">Company name</td>
-                  <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
-                </tr>
-                <tr>
-                  <td scope="row">James Williams</td>
-                  <td scope="row">Product Manager</td>
-                  <td scope="row">james@williams.com</td>
-                  <td scope="col">Company name</td>
-                  <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
-                </tr>
-              </tbody>
-            </table>
+			  <h6>List of approvers</h6>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Approver</th>
+                <th scope="col">Title</th>
+				<th scope="col">Email</th>
+				<th scope="col">Company</th>
+				<th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">James Williams</td>
+				  <td scope="row">Product Manager</td>
+				 <td scope="row">james@williams.com</td>
+				  <td scope="col">Company name</td>
+                                <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
+              </tr>
+              <tr>
+                <td scope="row">James Williams</td>
+				  <td scope="row">Product Manager</td>
+				 <td scope="row">james@williams.com</td>
+				  <td scope="col">Company name</td>
+                                <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
+              </tr>
+              <tr>
+                <td scope="row">James Williams</td>
+				  <td scope="row">Product Manager</td>
+				 <td scope="row">james@williams.com</td>
+				  <td scope="col">Company name</td>
+                                <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-times"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
             <hr/>
             <div class="text-right">
               <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
@@ -401,7 +428,7 @@
               <div class="card-body"> 
                 <!-- If approved enter actions -->
                 <h5>Action List</h5>
-                <table class="table table-responsive">
+                                <table class="table table-responsive">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -410,7 +437,7 @@
                       <th>Email</th>
                       <th>Due</th>
                       <th>Status</th>
-                      <th>Confirmation</th>
+						<th>Confirmation</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -421,7 +448,7 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-primary badge p-1"> <i class="fa fa-folder"></i> Confirmed</span></td>
-                      <td></td>
+						<td></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
@@ -430,7 +457,9 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-info badge p-1"><i class="fa fa-folder-o"></i> Completed</span></td>
-                      <td><button class="btn btn-outline-secondary"> Confirm</button></td>
+						<td>
+						<button class="btn btn-outline-secondary"> Confirm</button>
+						</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -439,7 +468,7 @@
                       <td>john@smith.com</td>
                       <td>Jun/23/2018</td>
                       <td><span class="badge-warning badge p-1"><i class="fa fa-folder-open"></i> Open</span></td>
-                      <td></td>
+						<td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -478,7 +507,7 @@
   </div>
   <div class="text-right p-4">
     <button type="button" class="btn btn-outline-secondary float-left">Close</button>
-    <button type="button" class="btn btn-success">Edit PDN</button>
+    <button type="button" class="btn btn-success">Edit TDN</button>
   </div>
 </div>
 

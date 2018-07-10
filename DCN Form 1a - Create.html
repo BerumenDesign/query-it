@@ -91,10 +91,85 @@
     <textarea type="inputChange" class="form-control" id="inputChange"></textarea>
   </div>
 </form>
-<!-- This is risk, cost and schedule -->
+<!-- This is impacted documents -->
 <section class="mt-4">
-  <h4>Risk, Cost and Schedule</h4>
-  
+  <h5>Impacted documents:</h5>
+  <div class="row">
+    <div class="col col-sm-6">
+      <div class="p-4 add-panel">
+        <form>
+          <h6>Add impacted document</h6>
+          <div class="form-group">
+            <label>Document #</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Revision #</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Upload file</label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+            <div class="upload-drop-zone" id="drop-zone"> Or drag and drop files here </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-outline-dark"><em class="fa fa-plus"></em> Add drawing</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col col-sm-6">
+      <h6>Impacted document list:</h6>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Document #</th>
+            <th scope="col">Revision #</th>
+            <th scope="col"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">123456</th>
+            <td>v1</td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">123456</th>
+            <td>v2</td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">123456</th>
+            <td>v3</td>
+                            <td  class="text-right"><button class="btn btn-outline-secondary"><i class="fa fa-trash"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+	
+	<h5 class="mt-4">Change impacts</h5>
+	<div class="row">
+	                <div class="col col-sm-12"><span class="mr-3 h6">Are changes in process safety?</span>
+	                  <div class="btn-group h6">
+                    <button id="headingOne" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Yes </button>
+                    <button id="headingTwo" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> No </button>
+                  </div>
+                </div>
+	</div>
+	<div class="row">
+	                <div class="col col-sm-12"><span class="mr-3 h6">Are changes in MTO / BOM?</span>
+	                  <div class="btn-group h6">
+                    <button id="headingOne" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Yes </button>
+                    <button id="headingTwo" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> No </button>
+                  </div>
+      </div>
+	</div>
+	
   <!-- Risk assessment seletion section -->
   <div>
     <h5 class="mt-4">Risk assessment</h5>
@@ -190,54 +265,6 @@
   </div>
   </div>
 </section>
-<!-- First seletion section -->
-<div class="pt-3">
-  <section class="row">
-    <div class="form-group mb-6 col-sm-12 col-lg-6">
-      <h5>Cost assessment</h5>
-      <div class="p-4 add-panel">
-        <form>
-          <div class="form-group">
-            <label for="inputCost">Cost </label>
-            <select id="inputCost" class="form-control">
-              <option selected>Select</option>
-              <option>Cost savings</option>
-              <option>Cost impact</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="inputCostEst">Cost estimate </label>
-            <div class="input-group" id="inputCostEst">
-              <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">$</span> </div>
-              <input type="number" class="form-control" placeholder="Enter amount number" aria-label="Cost estimate" aria-describedby="CostEstimate">
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="form-group mb-6 col-sm-12 col-lg-6">
-      <h5>Schedule assessment</h5>
-      <div class="p-4 add-panel">
-        <form>
-          <div class="form-group">
-            <label for="inputSche">Schedule</label>
-            <select id="inputSche" class="form-control">
-              <option selected>Select</option>
-              <option>Schedule savings</option>
-              <option>Schedule impact</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="inputDurEst">Enter duration</label>
-            <div class="input-group" id="inputDurEst">
-              <input type="text" class="form-control" placeholder="Enter duration" aria-label="Duration estimate" aria-describedby="DurationEstimate">
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-</div>
 
 <!-- button bar -->
 

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oxygen:300,400,700" rel="stylesheet">
+<script src="https://cdn.datatables.net/v/zf/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.4.0/b-colvis-1.4.0/b-html5-1.4.0/b-print-1.4.0/cr-1.3.3/fc-3.2.2/fh-3.1.2/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<link rel="stylesheet" href="css/main_layout.css">
+<link href="login.css" rel="stylesheet" type="text/css">
+<link href="modal.css" rel="stylesheet" type="text/css">
+<title>Query-it App</title>
+</head>
+
+<body>
+<div class="card m-4 text-center">Form 1 Create TDN</div>
+<div class="modal-content">
+<!-- This is where header starts -->
+<header class="pt-2 pb-2 pl-4">
+  <h3 class="float-left pt-2">Generate TDN</h3>
+  <div class="float-right">
+    <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
+    <button class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></button>
+  </div>
+</header>
+<!-- This is where content starts -->
+<div class="container p-4">
+<!-- This is where header starts -->
+<section>
+  <nav aria-label="breadcrumb" class="mb-4">
+    <ol class="breadcrumb pl-0">
+      <li class="breadcrumb-item"><a href="#">Company</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Project</li>
+    </ol>
+    <h4>Project Decision Notice</h4>
+  </nav>
+</section>
+<!-- This is where form starts -->
+<form>
+  <div class="form-row">
+    <div class="form-group col-sm-12">
+      <label>Title</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group col-sm-12 col-md-6">
+      <label for="inputPlant">Plant</label>
+      <button class="btn btn-link btn-sm float-right m-0 p-0 pr-3"><i class="fa fa-plus"></i> Add Plant</button>
+      <select id="inputPlant" class="form-control">
+        <option selected>Select Plant</option>
+        <option>Plant 1</option>
+        <option>Plant 2</option>
+        <option>Plant 3</option>
+      </select>
+    </div>
+    <div class="form-group col-sm-12 col-md-6">
+      <label for="inputDiscipline">Discipline</label>
+      <select id="inputDiscipline" class="form-control">
+        <option selected>Select</option>
+        <option>Discipline 1</option>
+        <option>Discipline 2</option>
+        <option>Discipline 3</option>
+      </select>
+    </div>
+    <div class="form-group col-sm-12 col-md-6">
+      <label for="inputTag">Tag</label>
+      <input id="inputTag" type="text" class="form-control">
+    </div>
+    <div class="form-group col-sm-12 col-md-6">
+      <label for="inputCategory">Standard</label>
+      <select id="inputCategory" class="form-control">
+        <option selected>Select</option>
+        <option>Std 001</option>
+        <option>Std 002</option>
+        <option>Std 003</option>
+        <option>Std 004</option>
+      </select>
+    </div>
+  </div>
+	<h6>Technical Standard requirement / intent:</h6>
+  <div class="form-group">
+      <label for="inputSection">Section # </label>
+      <input id="inputSection" type="text" class="form-control">
+    </div>
+  <div class="form-group">
+    <label for="inputIntent">Technical Standard requirement / intent:</label>
+    <textarea type="text" class="form-control" id="inputIntent"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="inputReason2">Describe Deviation:</label>
+    <textarea type="text" class="form-control" id="inputReason2"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="inputChange6">Provide Reasons for Deviation:</label>
+    <textarea type="inputChange" class="form-control" id="inputChange"></textarea>
+  </div>
+</form>
+<!-- This is risk, cost and schedule -->
+<section class="mt-4">
+  <h4>Risk, Cost and Schedule</h4>
+	
+
+
+  
+  <!-- Risk assessment seletion section -->
+  <div>
+    <div>
+      <div class="form-group mb-6">
+		  <h5 class="mt-4">Risk Assessment <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseRisk" aria-expanded="false" aria-controls="collapseRisk">
+			  <i class="fa fa-refresh"></i> Re-assess risk</button></h5>
+        <div class="p-4 add-panel">
+		<div class="collapse" id="collapseRisk">	
+          
+          <div class="form-group">
+			  <form>
+          <label for="inputConsRec">Consequence receptor</label>
+          <select id="inputConsRec" class="form-control col-sm-6">
+            <option selected>Personal safety</option>
+            <option>Process safety</option>
+          </select>
+			  </form>
+			</div>
+          <div class="form-group mt-4">
+            <label>Select consequence level</label>
+            <br>
+            <div class="btn-group-toggle impacts_section mb-0 level-option row" data-toggle="buttons">
+              <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="options" id="C1" autocomplete="off" checked>
+                <span class="card-title">Level C1</span><br/>
+                <span class="small">Impact limited to property, clean up required only</span> </label>
+              <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0" data-toggle="collapse" href="#collapseExample">
+                <input type="radio" name="options" id="C2" autocomplete="off" >
+                <span class="card-title">Level C2</span><br>
+                <span class="small">Off property impact requiring clean up only or impact limited to the property requiring either remediation or reclamation taking D-6 months</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="options" id="C3" autocomplete="off">
+                <span class="card-title">Level C3</span><br>
+                <span class="small">Off property impact requiring remediation taking D-6 months or impact limited to the property requiring either remediation or cleamation taking 7-12 months</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="options" id="C4" autocomplete="off">
+                <span class="card-title">Level C4</span><br>
+                <span class="small">Off property impact requiring remediation taking 7-12 months or impact limited to the property requiring either remediation or cleamation taking 1-4 years</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="options" id="C5" autocomplete="off">
+                <span class="card-title">Level C5</span><br>
+                <span class="small">Off property impact requiring remediation taking 1-4 years or impact limited to the property requiring either remediation or cleamation taking 5 years or more</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="options" id="C6" autocomplete="off">
+                <span class="card-title">Level C6</span><br>
+                <span class="small">Off property impact requiring remeditation taking 5 years or more<br>
+                </span> </label>
+            </div>
+          </div>
+          <div class="form-group">
+          <label>Likelihood Level</label>
+          <br/>
+          <form>
+            <div class="btn-group-toggle impacts_section mb-0 level-option row" data-toggle="buttons">
+              <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="likeLevels" id="L1" autocomplete="off" checked>
+                <span class="card-title">Level L1</span><br/>
+                <span class="small">Occurs:<br/>
+                * Between 100 years and less than 1,000 years <br/>
+                * Over the lifetime of the facility, one more more times within the company</span></label>
+              <label class="btn btn-outline-secondary col-sm-12 col-md-6 col-lg-4 m-0" data-toggle="collapse" href="#collapseExample">
+                <input type="radio" name="likeLevels" id="L2" autocomplete="off" >
+                <span class="card-title">Level L2</span><br>
+                <span class="small">Occurs:<br/>
+                * Between 1,000 years and less than 10,000 years <br/>
+                * Has been seen three or more times in the industry</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="L\likeLevels" id="L3" autocomplete="off">
+                <span class="card-title">Level L3</span><br>
+                <span class="small">Occurs:<br/>
+                * Between 100 years and less than 1,000 years <br/>
+                * Over the lifetime of the facility, one more more times within the company</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="likeLevels" id="L4" autocomplete="off">
+                <span class="card-title">Level L4</span><br>
+                <span class="small">Occurs:<br/>
+                * Between 10 years and less than 100 years <br/>
+                * Over the lifetime of the facility, one more more times within the company</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="likeLevels" id="L5" autocomplete="off">
+                <span class="card-title">Level L5</span><br>
+                <span class="small">Occurs:<br/>
+                * Between 1 year and less than 10 years <br/>
+                * Over the lifetime of the facility, one more more times within the company</span></label>
+              <label class="btn btn-outline-secondary  col-sm-12 col-md-6 col-lg-4 m-0">
+                <input type="radio" name="likeLevels" id="L6" autocomplete="off">
+                <span class="card-title">Level L6</span><br>
+                <span class="small">Expected to occur:<br>
+                * More than one per year within the facility<br>
+                </span> </label>
+            </div>
+          </form>
+        </div>
+	
+			        </div>
+        <form>
+          <div class="form-group row">
+            <label for="riskResult" class="col-sm-12 col-md-3 col-form-label">Assement</label>
+            <div class="col-sm-12 col-md-9">
+              <input type="text" readonly class="form-control-plaintext" id="riskResult" value="Personal Safety Risk level  III  |  Consequence 2 / Likelihood 3">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputRiskMit">Describe risk mitigation(s):</label>
+            <textarea type="inputChange" class="form-control" id="inputRiskMit" placeholder="Applicable for Level I or II risks"></textarea>
+          </div>
+        </form>
+
+  
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- First seletion section -->
+  <div class="pt-3">
+    <div>
+      <section class="row">
+        <div class="form-group mb-6 col-sm-12 col-lg-6">
+          <h5>Cost assessment</h5>
+          <div class="p-4 add-panel">
+            <form>
+              <div class="form-group">
+                <label for="inputCost">Cost </label>
+                <select id="inputCost" class="form-control">
+                  <option selected>Select</option>
+                  <option>Cost savings</option>
+                  <option>Cost impact</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputCostEst">Cost estimate </label>
+                <div class="input-group" id="inputCostEst">
+                  <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">$</span> </div>
+                  <input type="number" class="form-control" placeholder="Enter amount number" aria-label="Cost estimate" aria-describedby="CostEstimate">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="form-group mb-6 col-sm-12 col-lg-6">
+          <h5>Schedule assessment</h5>
+          <div class="p-4 add-panel">
+            <form>
+              <div class="form-group">
+                <label for="inputSche">Schedule</label>
+                <select id="inputSche" class="form-control">
+                  <option selected>Select</option>
+                  <option>Schedule savings</option>
+                  <option>Schedule impact</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputDurEst">Enter duration</label>
+                <div class="input-group" id="inputDurEst">
+                  <input type="text" class="form-control" placeholder="Enter duration" aria-label="Duration estimate" aria-describedby="DurationEstimate">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+
+	<!-- button bar -->
+
+<div class="text-right p-4">
+  <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
+  <button type="button" class="btn btn-outline-secondary">Save Draft</button>
+  <button type="button" class="btn btn-success">Generate TDN</button>
+</div>
+</div>
+	</div>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -17,18 +17,18 @@
 </head>
 
 <body>
-<div class="card m-4 text-center">Form 1 Create TDN</div>
+<div class="card m-4 text-center">Form 1 Create DCN</div>
 <div class="modal-content">
 <!-- This is where header starts -->
 <header class="pt-2 pb-2 pl-4">
-  <h3 class="float-left pt-2">Generate TDN</h3>
+  <h3 class="float-left pt-2">Generate DCN</h3>
   <div class="float-right">
     <button class="btn btn-link"><i class="fa fa-print"></i> Print </button>
     <button class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></button>
   </div>
 </header>
 <!-- This is where content starts -->
-<div class="container p-4">
+<div class="container-fluid xc p-4">
 <!-- This is where header starts -->
 <section>
   <nav aria-label="breadcrumb" class="mb-4">
@@ -36,7 +36,7 @@
       <li class="breadcrumb-item"><a href="#">Company</a></li>
       <li class="breadcrumb-item active" aria-current="page">Project</li>
     </ol>
-    <h4>Project Decision Notice</h4>
+    <h4>Design Change Notice</h4>
   </nav>
 </section>
 <!-- This is where form starts -->
@@ -70,31 +70,24 @@
       <input id="inputTag" type="text" class="form-control">
     </div>
     <div class="form-group col-sm-12 col-md-6">
-      <label for="inputCategory">Standard</label>
+      <label for="inputCategory">Category</label>
       <select id="inputCategory" class="form-control">
         <option selected>Select</option>
-        <option>Std 001</option>
-        <option>Std 002</option>
-        <option>Std 003</option>
-        <option>Std 004</option>
+        <option>Scope Change</option>
+        <option>Design Error</option>
+        <option>Client Request</option>
+        <option>Construction Request</option>
+        <option>Supplier/Vendor Change</option>
       </select>
     </div>
   </div>
-	<h6>Technical Standard requirement / intent:</h6>
+
   <div class="form-group">
-      <label for="inputSection">Section # </label>
-      <input id="inputSection" type="text" class="form-control">
-    </div>
-  <div class="form-group">
-    <label for="inputIntent">Technical Standard requirement / intent:</label>
-    <textarea type="text" class="form-control" id="inputIntent"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="inputReason2">Describe Deviation:</label>
+    <label for="inputReason2">Existing condition:</label>
     <textarea type="text" class="form-control" id="inputReason2"></textarea>
   </div>
   <div class="form-group">
-    <label for="inputChange6">Provide Reasons for Deviation:</label>
+    <label for="inputChange6">Describe change:</label>
     <textarea type="inputChange" class="form-control" id="inputChange"></textarea>
   </div>
 </form>
@@ -196,66 +189,65 @@
   </div>
   </div>
   </div>
-  <!-- First seletion section -->
-  <div class="pt-3">
-
-      <section class="row">
-        <div class="form-group mb-6 col-sm-12 col-lg-6">
-          <h5>Cost assessment</h5>
-          <div class="p-4 add-panel">
-            <form>
-              <div class="form-group">
-                <label for="inputCost">Cost </label>
-                <select id="inputCost" class="form-control">
-                  <option selected>Select</option>
-                  <option>Cost savings</option>
-                  <option>Cost impact</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputCostEst">Cost estimate </label>
-                <div class="input-group" id="inputCostEst">
-                  <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">$</span> </div>
-                  <input type="number" class="form-control" placeholder="Enter amount number" aria-label="Cost estimate" aria-describedby="CostEstimate">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-group mb-6 col-sm-12 col-lg-6">
-          <h5>Schedule assessment</h5>
-          <div class="p-4 add-panel">
-            <form>
-              <div class="form-group">
-                <label for="inputSche">Schedule</label>
-                <select id="inputSche" class="form-control">
-                  <option selected>Select</option>
-                  <option>Schedule savings</option>
-                  <option>Schedule impact</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputDurEst">Enter duration</label>
-                <div class="input-group" id="inputDurEst">
-                  <input type="text" class="form-control" placeholder="Enter duration" aria-label="Duration estimate" aria-describedby="DurationEstimate">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-  </div>
 </section>
+<!-- First seletion section -->
+<div class="pt-3">
+  <section class="row">
+    <div class="form-group mb-6 col-sm-12 col-lg-6">
+      <h5>Cost assessment</h5>
+      <div class="p-4 add-panel">
+        <form>
+          <div class="form-group">
+            <label for="inputCost">Cost </label>
+            <select id="inputCost" class="form-control">
+              <option selected>Select</option>
+              <option>Cost savings</option>
+              <option>Cost impact</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputCostEst">Cost estimate </label>
+            <div class="input-group" id="inputCostEst">
+              <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">$</span> </div>
+              <input type="number" class="form-control" placeholder="Enter amount number" aria-label="Cost estimate" aria-describedby="CostEstimate">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="form-group mb-6 col-sm-12 col-lg-6">
+      <h5>Schedule assessment</h5>
+      <div class="p-4 add-panel">
+        <form>
+          <div class="form-group">
+            <label for="inputSche">Schedule</label>
+            <select id="inputSche" class="form-control">
+              <option selected>Select</option>
+              <option>Schedule savings</option>
+              <option>Schedule impact</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputDurEst">Enter duration</label>
+            <div class="input-group" id="inputDurEst">
+              <input type="text" class="form-control" placeholder="Enter duration" aria-label="Duration estimate" aria-describedby="DurationEstimate">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
 
-
-	<!-- button bar -->
+<!-- button bar -->
 
 <div class="text-right p-4">
   <button type="button" class="btn btn-outline-secondary float-left">Cancel</button>
   <button type="button" class="btn btn-outline-secondary">Save Draft</button>
-  <button type="button" class="btn btn-success">Generate TDN</button>
+  <button type="button" class="btn btn-success">Generate DCN</button>
 </div>
 </div>
-	</div>
+</div>
 
 <!-- Optional JavaScript --> 
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
